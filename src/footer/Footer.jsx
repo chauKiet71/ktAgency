@@ -25,7 +25,7 @@ const Footer = () => {
                             </div>
                         </div>
 
-                        <div className="col-lg-3">
+                        <div className="col-lg-4">
                             <div className={styles.boxCenter}>
                                 <h3>DỊCH VỤ</h3>
                                 <p>Chạy quảng cáo Facebook</p>
@@ -35,31 +35,13 @@ const Footer = () => {
                             </div>
                         </div>
 
-                        <div className="col-lg-5">
+                        <div className="col-lg-4">
                             <div className={styles.boxSendInfo}>
-                                <h3>GỬI YÊU CẦU BÁO GIÁ DỊCH VỤ</h3>
-                                <p>Chúng tôi luôn tư vấn dịch vụ miễn phí. Chúng tôi sẽ liên hệ báo giá theo thông tin mà bạn để lại.</p>
-
-                                <form className={styles.contactForm} action="">
-
-                                    <div className={styles.row}>
-                                        <input type="text" placeholder="Họ tên" />
-                                        <input type="email" placeholder="Email" />
-                                    </div>
-                                    <input type="text" placeholder="Số điện thoại" />
-                                    <select>
-                                        <option disabled selected>Chọn dịch vụ</option>
-                                        <option value="web">Thiết kế website</option>
-                                        <option value="seo">Dịch vụ SEO</option>
-                                        <option value="ads">Quảng cáo Google/Facebook</option>
-                                    </select>
-
-                                    <textarea placeholder="Nội dung tin nhắn"></textarea>
-
-                                    <div className={styles.btnSend}>
-                                        <button>Gửi</button>
-                                    </div>
-                                </form>
+                                <h3>CHÍNH SÁCH QUI ĐỊNH</h3>
+                                <p>Điều khoản sử dụng</p>
+                                <p>Chính sách bảo mật</p>
+                                <p>Thoả thuận sử dụng dịch vụ</p>
+                                <p>Hỗ trợ khách hàng</p>
 
                             </div>
                         </div>

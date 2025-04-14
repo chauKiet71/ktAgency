@@ -3,15 +3,20 @@ import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './header/Header';
 import Home from './pages/Home/Home';
+import Contact from './pages/Contact/Contact';
+import News from './pages/News/News'
+
 function App() {
   return (
     <>
       <BrowserRouter>
-      <Home/>
-
-      <Routes>
-        
-      </Routes>
+        <Routes>
+          <Route path='/' element={<Home />}></Route>
+          <Route path='/gioi-thieu'></Route>
+          <Route path='/dich-vu'></Route>
+          <Route path='/tin-tuc' element={<News />}></Route>
+          <Route path='/lien-he' element={<Contact />}></Route>
+        </Routes>
       </BrowserRouter>
     </>
   )

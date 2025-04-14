@@ -1,0 +1,57 @@
+.postNews {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.boxImage{
+    width: 30%;
+}
+.boxImage img{
+    width: 100%;
+}
+.boxContent {
+    width: 70%;
+    margin-left: 20px;
+}
+
+.boxContent h4{
+    font-size: 20px;
+}
+.boxContent p{
+    margin-bottom: 10px;
+}
+
+.boxContent a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 14px;
+}
+.boxContent a:hover{
+    color: red
+}
+
+.boxPostNew {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.boxImagePostNew {
+    width: 30%;
+}
+.boxImagePostNew img {
+    width: 100%;
+}
+.contentPostNew {
+    width: 66%;
+    margin-left: 4%;
+}
+.contentPostNew span{
+    font-weight: 600;
+    font-size: 18px;
+}
+.contentPostNew p{
+    margin: 0;
+    font-size: 14px;
+    color: rgb(100, 100, 247);
+}

@@ -1,18 +1,6 @@
-.boxLelf p {
-    margin-bottom: 5px;
-}
-
-.boxCenter h3 {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.boxCenter p {
-    margin-bottom: 5px;
-}
 
 .contactForm {
-    max-width: 500px;
+    width: 100%;
     font-family: Arial, sans-serif;
 }
 
@@ -33,6 +21,10 @@
     font-size: 16px;
     resize: none;
     box-sizing: border-box;
+}
+
+.contactForm textarea {
+    height: 120px;
 }
 
 .contactForm .row input {
@@ -62,7 +54,62 @@
     appearance: none;
     /* ẩn mũi tên mặc định nếu muốn tự thiết kế */
 }
-.boxSendInfo h3{
+
+.title{
     font-size: 20px;
     font-weight: bold;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.boxInfo {
+    display: flex;
+    margin-bottom: 20px;
+}
+.boxIcon{
+    background-color: rgb(82, 82, 228);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.boxIcon svg{
+    width: 30px;
+    height: 30px;
+    color: #fff;
+}
+.boxContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15px;
+}
+.boxContent p{
+    margin-bottom: 5px;
+}
+
+.socialIcon {
+    display: flex;
+}
+.icon {
+    background-color: aquamarine;
+    margin-right: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.icon svg {
+    width: 25px;
+    height: 25px;
+}
+
+.icon:hover{
+    background-color: #cac5c5;
+    transition:  0.3s ease;
+}
+
+.boxSocial h3{
+    font-size: 16px;
+    font-weight: bold;
+
 }
