@@ -1,0 +1,32 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.boxRight {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.boxRight ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+}
+
+.boxRight ul li a {
+    text-decoration: none;
+    margin-right: 20px;
+    color: #333;
+}
+
+.boxRight span {
+    background-color: aqua;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+}

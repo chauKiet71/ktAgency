@@ -1,0 +1,64 @@
+.boxLelf p {
+    margin-bottom: 5px;
+}
+
+.boxCenter h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.boxCenter p {
+    margin-bottom: 5px;
+}
+
+.contactForm {
+    max-width: 500px;
+    font-family: Arial, sans-serif;
+}
+
+.contactForm .row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.contactForm input,
+.contactForm textarea {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: #f5ece5;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    resize: none;
+    box-sizing: border-box;
+}
+
+.contactForm .row input {
+    width: 50%;
+}
+
+.btnSend {
+    text-align: center;
+}
+
+.btnSend button {
+    border: none;
+    padding: 10px 50px;
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+.contactForm select {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: #f5ece5;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    appearance: none;
+    /* ẩn mũi tên mặc định nếu muốn tự thiết kế */
+}
