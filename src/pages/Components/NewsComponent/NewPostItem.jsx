@@ -1,6 +1,6 @@
 import styles from "./NewsComponent.module.css"
 import { Link } from "react-router-dom"
-
+import tinTuc from "../../../../tin-tuc-moi.html"
 const NewPostItem = ({ image, title, date }) => {
     return (
         <>
@@ -9,7 +9,7 @@ const NewPostItem = ({ image, title, date }) => {
                     <img src={image} alt="" />
                 </div>
                 <div className={styles.contentPostNew}>
-                    <span>{title.length > 50 ? title.slice(0, 50) + '...' : title}</span>
+                    <a href={tinTuc}>{title.length > 50 ? title.slice(0, 50) + '...' : title}</a>
                     <p>{date}</p>
                 </div>
             </div>

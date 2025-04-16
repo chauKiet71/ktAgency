@@ -8,11 +8,12 @@ import News from './pages/News/News'
 import Ads from './pages/Service/Ads/Ads';
 import LandingPage from './pages/Service/LandingPage/LandingPage';
 import ClickSpark from './pages/Components/ClickSpark/ClickSpark';
+import ScrollToTop from "./pages/Components/ScrollToTop/ScrollToTop"
 
 function App() {
   return (
     <>
-
+      
       <ClickSpark
         sparkColor='#285e9c'
         sparkSize={10}
@@ -23,6 +24,7 @@ function App() {
         {/* Your content here */}
 
         <BrowserRouter>
+        <ScrollToTop />
           <Routes>
             <Route path='/' element={<Home />}></Route>
             <Route path='/gioi-thieu'></Route>
