@@ -9,6 +9,7 @@ import Ads from './pages/Service/Ads/Ads';
 import LandingPage from './pages/Service/LandingPage/LandingPage';
 import ClickSpark from './pages/Components/ClickSpark/ClickSpark';
 import ScrollToTop from "./pages/Components/ScrollToTop/ScrollToTop"
+import Website from './pages/Service/Webstite/Website';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             <Route path='/gioi-thieu'></Route>
             <Route path='/quang-cao-facebook' element={<Ads />}></Route>
             <Route path='/landing-page' element={<LandingPage />} />
+            <Route path='/website' element={<Website />} />
             <Route path='/tin-tuc' element={<News />}></Route>
             <Route path='/lien-he' element={<Contact />}></Route>
           </Routes>
