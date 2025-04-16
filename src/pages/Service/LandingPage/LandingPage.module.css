@@ -1,0 +1,150 @@
+.section1 {
+    background-image: url("../../../assets//bg.jpg");
+    padding: 60px 0px;
+}
+
+.boxReason {
+    background-color: #fff;
+    padding: 50px;
+}
+
+.contentReason h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.contentReason span {
+    color: rgb(68, 0, 255);
+}
+
+.highlight {
+    color: #fff !important;
+    background-color: rgb(255, 0, 162);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.titleSection2 {
+    text-align: center;
+    margin: 40px 0px;
+}
+
+.titleSection2 h1 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.titleSection2 h2 {
+    background-color: rgb(255, 0, 162);
+    margin: 0px 190px;
+    padding: 10px 0px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.section2 img {
+    width: 100%;
+}
+
+/* section 3 */
+
+.boxContact {
+    box-shadow: 2px 2px 5px 2px rgba(218, 215, 215, 0.3);
+    padding: 20px 0px;
+    margin: 40px 0px;
+}
+
+.boxContact h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 10px 0px 10px 0px;
+}
+
+.boxContact span {
+    color: rgb(255, 157, 0);
+}
+
+.boxContact p {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.btnContact {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 380px;
+}
+
+.btnContact button {
+    border: none;
+    outline: none;
+    background-color: rgb(255, 0, 162);
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+/* section 4 */
+
+.section4 {
+    background-image: url("../../../assets/bg.jpg");
+    background-size: cover;
+}
+
+.section4 h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(65, 65, 243);
+    ;
+}
+
+.content {
+    text-align: center;
+    margin: 20px 0px;
+    font-size: 18px;
+}
+
+.section4 span {
+    color: #333 !important;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.tabs li {
+    padding: 0px 20px;
+    cursor: pointer;
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
+.active {
+    border-bottom: 2px solid blue;
+    color: blue;
+}
+
+.boxLanding {
+    padding: 40px 0px;
+}
+.btnLienHe{
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    background-color: red;
+    font-size: 18px ;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 20px;
+}

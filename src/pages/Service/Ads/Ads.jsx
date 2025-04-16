@@ -10,11 +10,14 @@ import ImageCfb from "../../../assets/cfb.jpg"
 import ImagePhatHanh from "../../../assets/phathanhnhanh_tangtuongtac.jpg"
 import { FaUserClock, FaFacebook, FaRegClock } from "react-icons/fa";
 import { FaCircleCheck } from "react-icons/fa6";
+import bannerads from "../../../assets/bannerads.jpg"
 import clsx from "clsx"
 const Ads = () => {
     return (
         <>
             <Header />
+
+            <img src={bannerads} style={{ width: '100%' }} alt="" />
             <div className={clsx('container', styles.ads)}>
                 {/* section 1 */}
                 <section>

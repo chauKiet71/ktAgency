@@ -1,5 +1,6 @@
 import Service from "../../assets/service.jpg"
 import Banner1 from "../../assets/banner.png"
+import BannerHome1 from "../../assets/bannerhome1.jpg"
 import Person from "../../assets/person.jpg"
 import News from "../../assets/news.png"
 import { FaUserPlus, FaUsers, FaBuffer, FaLaptop, FaStar } from "react-icons/fa";
@@ -8,92 +9,103 @@ import { Link } from "react-router-dom"
 import styles from "../Home/Home.module.css"
 import Header from "../../header/Header";
 import Footer from "../../footer/Footer";
+import banner from "../../assets/bannerads.jpg"
+import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
 const Home = () => {
+
+    const { ref, inView } = useInView({
+        triggerOnce: true,  // chỉ chạy 1 lần
+        threshold: 0.5       // phần tử hiển thị 50% sẽ kích hoạt
+    });
+
     return (
-        <>
+        <div>
             <Header />
             {/* banner */}
-
+            <img src={banner} style={{ width: '100%' }} alt="" />
             {/* section 1 */}
 
-            <section>
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-6">
-                            <img src={Banner1} style={{ width: '100%' }} alt="" />
-                        </div>
-                        <div className="col-lg-6">
-                            <div className={styles.contentSection1}>
-                                <h1>Tại sao bạn cần chọn
-                                    Vina software?</h1>
-                                <p>VNS cung cấp dịch vụ Thiết kế website trọn gói với giao diện đẹp, độc đáo, sáng tạo là Đơn vị chuyên tư vấn và triển khai hoạt động Marketing số với nền tảng Google , Facebook mang tính ứng dụng cao và phù hợp với từng cá nhân, doanh nghiệp. Với mục tiêu cung cấp nhiều gói sản phẩm phong phú về mẫu mã và các tính năng linh hoạt cho nhiều loại hình website như giới thiệu công ty, bán hàng, trang tin tức, thương mại điện tử… cùng với nhiều giao diện phong phú đa dạng độc đáo đã được VNS lọc chọn và đúc kết nhằm giới thiệu tới khách hàng với mong muốn có một website nhanh, đẹp, hiệu quả và giá cả hợp lý.</p>
+            <div className={styles.bg}>
+                <section className={styles.section1}>
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-lg-6 block">
+                                <img src={BannerHome1} style={{ width: '100%' }} alt="" />
+                            </div>
+                            <div className="col-lg-6 block">
+                                <div className={styles.contentSection1}>
+                                    <h1>Tại sao bạn cần chọn
+                                        Vina software?</h1>
+                                    <p>VNS cung cấp dịch vụ Thiết kế website trọn gói với giao diện đẹp, độc đáo, sáng tạo là Đơn vị chuyên tư vấn và triển khai hoạt động Marketing số với nền tảng Google , Facebook mang tính ứng dụng cao và phù hợp với từng cá nhân, doanh nghiệp. Với mục tiêu cung cấp nhiều gói sản phẩm phong phú về mẫu mã và các tính năng linh hoạt cho nhiều loại hình website như giới thiệu công ty, bán hàng, trang tin tức, thương mại điện tử… cùng với nhiều giao diện phong phú đa dạng độc đáo đã được VNS lọc chọn và đúc kết nhằm giới thiệu tới khách hàng với mong muốn có một website nhanh, đẹp, hiệu quả và giá cả hợp lý.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            {/* section 2 */}
+                {/* section 2 */}
 
-            <section className={styles.section2}>
-                <div className="container">
-                    <h1>DỊCH VỤ CỦA CHÚNG TÔI</h1>
-                    <div className="row">
-                        <div className="col-lg-3">
-                            <Link>
-                                <div className={styles.boxService}>
-                                    <div className={styles.hoverImage}>
-                                        <img src={Service} style={{ width: '100%' }} alt="" />
-                                        <div className={styles.backgroundText}>
-                                            <p>DỊCH VỤ THIẾT KẾ WEBSITE</p>
+                <section className={styles.section2}>
+                    <div className="container">
+                        <h1>DỊCH VỤ CỦA CHÚNG TÔI</h1>
+                        <div className="row">
+                            <div className="col-lg-3">
+                                <Link>
+                                    <div className={styles.boxService}>
+                                        <div className={styles.hoverImage}>
+                                            <img src={Service} style={{ width: '100%' }} alt="" />
+                                            <div className={styles.backgroundText}>
+                                                <p>THIẾT KẾ WEBSITE</p>
+                                            </div>
                                         </div>
+                                        <span>THIẾT KẾ WEBSITE</span>
                                     </div>
-                                    <span>DỊCH VỤ THIẾT KẾ WEBSITE</span>
-                                </div>
-                            </Link>
-                        </div>
-                        <div className="col-lg-3">
-                            <Link>
-                                <div className={styles.boxService}>
-                                    <div className={styles.hoverImage}>
-                                        <img src={Service} style={{ width: '100%' }} alt="" />
-                                        <div className={styles.backgroundText}>
-                                            <p>DỊCH VỤ THIẾT KẾ WEBSITE</p>
+                                </Link>
+                            </div>
+                            <div className="col-lg-3">
+                                <Link>
+                                    <div className={styles.boxService}>
+                                        <div className={styles.hoverImage}>
+                                            <img src={Service} style={{ width: '100%' }} alt="" />
+                                            <div className={styles.backgroundText}>
+                                                <p>THIẾT KẾ LANDING PAGE</p>
+                                            </div>
                                         </div>
+                                        <span>THIẾT KẾ LANDING PAGE</span>
                                     </div>
-                                    <span>DỊCH VỤ THIẾT KẾ WEBSITE</span>
-                                </div>
-                            </Link>
-                        </div>
-                        <div className="col-lg-3">
-                            <Link>
-                                <div className={styles.boxService}>
-                                    <div className={styles.hoverImage}>
-                                        <img src={Service} style={{ width: '100%' }} alt="" />
-                                        <div className={styles.backgroundText}>
-                                            <p>DỊCH VỤ THIẾT KẾ WEBSITE</p>
+                                </Link>
+                            </div>
+                            <div className="col-lg-3">
+                                <Link>
+                                    <div className={styles.boxService}>
+                                        <div className={styles.hoverImage}>
+                                            <img src={Service} style={{ width: '100%' }} alt="" />
+                                            <div className={styles.backgroundText}>
+                                                <p>CHẠY QUẢNG CÁO FACEBOOK</p>
+                                            </div>
                                         </div>
+                                        <span>QUẢNG CÁO FACEBOOK</span>
                                     </div>
-                                    <span>DỊCH VỤ THIẾT KẾ WEBSITE</span>
-                                </div>
-                            </Link>
-                        </div>
-                        <div className="col-lg-3">
-                            <Link>
-                                <div className={styles.boxService}>
-                                    <div className={styles.hoverImage}>
-                                        <img src={Service} style={{ width: '100%' }} alt="" />
-                                        <div className={styles.backgroundText}>
-                                            <p>DỊCH VỤ THIẾT KẾ WEBSITE</p>
+                                </Link>
+                            </div>
+                            <div className="col-lg-3">
+                                <Link>
+                                    <div className={styles.boxService}>
+                                        <div className={styles.hoverImage}>
+                                            <img src={Service} style={{ width: '100%' }} alt="" />
+                                            <div className={styles.backgroundText}>
+                                                <p>HỖ TRỢ FACEBOOK</p>
+                                            </div>
                                         </div>
+                                        <span>HỖ TRỢ FACEBOOK</span>
                                     </div>
-                                    <span>DỊCH VỤ THIẾT KẾ WEBSITE</span>
-                                </div>
-                            </Link>
+                                </Link>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
 
             {/* section 3 */}
 
@@ -101,23 +113,48 @@ const Home = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-3">
-                            <div className={styles.showExperience}>
+                            <div className={styles.showExperience} ref={ref}>
                                 <FaUserPlus />
-                                <span>500+</span>
+                                {/* <span>500+</span> */}
+                                {inView && (
+                                    <CountUp
+                                        start={0}
+                                        end={500}
+                                        duration={3}
+                                        suffix="+"
+                                        className={styles.countUpText}
+                                    />
+                                )}
                                 <p>KHÁCH HÀNG</p>
                             </div>
                         </div>
                         <div className="col-lg-3">
                             <div className={styles.showExperience}>
                                 <FaLaptop />
-                                <span>300+</span>
+                                {inView && (
+                                    <CountUp
+                                        start={0}
+                                        end={300}
+                                        duration={3}
+                                        suffix="+"
+                                        className={styles.countUpText}
+                                    />
+                                )}
                                 <p>ĐƯỢC TỐI ƯU</p>
                             </div>
                         </div>
                         <div className="col-lg-3">
                             <div className={styles.showExperience}>
                                 <FaBuffer />
-                                <span>100%</span>
+                                {inView && (
+                                    <CountUp
+                                        start={0}
+                                        end={100}
+                                        duration={3}
+                                        suffix="%"
+                                        className={styles.countUpText}
+                                    />
+                                )}
                                 <p>HÀI LÒNG</p>
                             </div>
                         </div>
@@ -125,7 +162,15 @@ const Home = () => {
                             <div className={styles.showExperience}>
 
                                 <FaUsers />
-                                <span>5+</span>
+                                {inView && (
+                                    <CountUp
+                                        start={0}
+                                        end={5}
+                                        duration={3}
+                                        suffix="+"
+                                        className={styles.countUpText}
+                                    />
+                                )}
                                 <p>KINH NGHIỆM</p>
                             </div>
                         </div>
@@ -233,8 +278,8 @@ const Home = () => {
                 </div>
             </section>
 
-            <Footer/>
-        </>
+            <Footer />
+        </div>
     )
 }
 

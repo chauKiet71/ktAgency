@@ -1,4 +1,14 @@
+.bg {
+    /* background-image: url("../../assets//bg3.jpg"); */
+    background-size: cover;
+}
+
 /* section1 */
+
+.section1{
+    margin: 60px 0px;
+}
+
 .contentSection1 p {
     font-size: 18px;
 }
@@ -12,7 +22,7 @@
     text-align: center;
     font-size: 26px;
     font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .section2 a {
@@ -49,6 +59,11 @@
     position: relative;
 }
 
+.hoverImage img{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
 .backgroundText {
     position: absolute;
     width: 100%;
@@ -74,8 +89,9 @@
 
 /* section 3 */
 .section3 {
-    background-color: aquamarine;
+    background-color: #285e9c;
     padding: 20px;
+    margin: 40px 0px !important;
 }
 
 .showExperience {
@@ -110,7 +126,7 @@
     font-size: 26px;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .boxTop {
@@ -178,3 +194,11 @@
     font-weight: bold;
     margin-bottom: 20px;
 }
+
+.countUpText {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+  

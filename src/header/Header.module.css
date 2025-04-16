@@ -1,3 +1,35 @@
+.header {
+    position: relative;
+    width: 100%;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    background-color: transparent;
+    z-index: 999;
+}
+
+/* Khi scroll xuống => sticky + hiệu ứng rơi */
+.sticky {
+    position: fixed;
+    top: 0;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(0);
+    animation: dropDown 0.3s ease forwards;
+}
+
+/* Animation hiệu ứng rơi */
+@keyframes dropDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
 .menu {
     display: flex;
     justify-content: space-between;
@@ -17,10 +49,25 @@
     display: flex;
 }
 
+.boxRight ul li {
+    position: relative;
+}
+
+.boxRight ul li a:hover{
+   color: rgb(60, 150, 247);
+   transition: 0.3s;
+}
+
+.active a{
+    color: rgb(60, 150, 247) !important;
+}
+
 .boxRight ul li a {
     text-decoration: none;
     margin-right: 20px;
     color: #333;
+    font-weight: 500;
+    transition: 0.3s;
 }
 
 .boxRight span {
@@ -30,3 +77,91 @@
     color: #fff;
     cursor: pointer;
 }
+
+.service {
+    position: relative;
+}
+
+.subMenu {
+    display: none !important;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    list-style: none;
+    padding: 10px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    min-width: 210px;
+    transition: 0.3s ease;
+}
+
+.subMenu li {
+    padding: 8px 16px;
+}
+
+.subMenu li:hover {
+    background-color: #f0f0f0;
+}
+
+.service:hover .subMenu {
+    display: block !important;
+    transition: 0.3s ease;
+}
+
+
+.subMenu li a {
+    display: block;
+}
+
+/* button */
+
+.btn {
+    padding: 15px 40px;
+    border: none;
+    outline: none;
+    color: #c0adad;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 12px;
+    font-weight: 700;
+  }
+  .btn::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: #333; */
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+  /* glow */
+  .btn::before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #008cff, #eff0f1, #008cff, #fff
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height:  calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 1;
+  }
+  
+  @keyframes glowing {
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+  }
+  
