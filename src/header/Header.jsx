@@ -6,9 +6,14 @@ import Banner1 from "../assets/banner.png"
 import { Link, useLocation } from "react-router-dom"
 import styles from "../header/Header.module.css"
 import { useEffect, useState } from "react";
+import clsx from "clsx";
+import MyVerticallyCenteredModal from "../pages/Components/Model/MyVerticallyCenteredModal"
+
 
 
 const Header = () => {
+
+    const [modalShow, setModalShow] = useState(false);
     const [isSticky, setIsSticky] = useState(false);
 
     const location = useLocation();
@@ -29,12 +34,17 @@ const Header = () => {
         setActiveIndex(index);
     };
 
+
     return (
         <>
+            <MyVerticallyCenteredModal
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+            />
             {/* header */}
             <header className={`${styles.header} ${isSticky ? styles.sticky : ""}`}>
                 <div className="container">
-                    <div className={styles.menu}>
+                    <div className={clsx(styles.menu)}>
                         <Link to='/'>
                             <img src={Logo} alt="" />
                         </Link>
@@ -67,7 +77,7 @@ const Header = () => {
                                     <Link to='/lien-he'>LIÊN HỆ</Link>
                                 </li>
                             </ul>
-                            <span className={styles.btn}>ĐĂNG KÝ TƯ VẤN</span>
+                            <span className={styles.btn} onClick={() => setModalShow(true)}>ĐĂNG KÝ TƯ VẤN</span>
                         </div>
                     </div>
                 </div>

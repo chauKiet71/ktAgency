@@ -53,12 +53,12 @@
     position: relative;
 }
 
-.boxRight ul li a:hover{
-   color: rgb(60, 150, 247);
-   transition: 0.3s;
+.boxRight ul li a:hover {
+    color: rgb(60, 150, 247);
+    transition: 0.3s;
 }
 
-.active a{
+.active a {
     color: rgb(60, 150, 247) !important;
 }
 
@@ -126,8 +126,9 @@
     z-index: 0;
     border-radius: 12px;
     font-weight: 700;
-  }
-  .btn::after {
+}
+
+.btn::after {
     content: "";
     z-index: -1;
     position: absolute;
@@ -137,31 +138,38 @@
     left: 0;
     top: 0;
     border-radius: 10px;
-  }
-  /* glow */
-  .btn::before {
+}
+
+/* glow */
+.btn::before {
     content: "";
-    background: linear-gradient(
-      45deg,
-      #008cff, #eff0f1, #008cff, #fff
-    );
+    background: linear-gradient(45deg,
+            #008cff, #eff0f1, #008cff, #fff);
     position: absolute;
     top: -2px;
     left: -2px;
     background-size: 600%;
     z-index: -1;
     width: calc(100% + 4px);
-    height:  calc(100% + 4px);
+    height: calc(100% + 4px);
     filter: blur(8px);
     animation: glowing 20s linear infinite;
     transition: opacity .3s ease-in-out;
     border-radius: 10px;
     opacity: 1;
-  }
-  
-  @keyframes glowing {
-    0% {background-position: 0 0;}
-    50% {background-position: 400% 0;}
-    100% {background-position: 0 0;}
-  }
-  
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+

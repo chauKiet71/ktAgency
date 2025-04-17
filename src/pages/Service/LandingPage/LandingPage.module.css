@@ -141,10 +141,14 @@
     border: none;
     outline: none;
     padding: 10px 20px;
-    background-color: red;
+    background: linear-gradient(45deg, #008cff, #eff0f1);
     font-size: 18px ;
     border-radius: 10px;
     color: #fff;
     font-weight: 600;
     margin-top: 20px;
+}
+
+.boxLanding p svg{
+    color: rgb(5, 194, 5);
 }

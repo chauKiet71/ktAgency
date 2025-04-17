@@ -18,3 +18,32 @@
 .slick-slider {
   margin: 0;
 }
+
+.MuiModal-root {
+  z-index: 99999 !important;
+}
+
+/* Áp dụng cho toàn bộ trang */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  /* nền track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #02d3f7;
+  /* màu tay kéo */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.slick-prev:before, .slick-next:before{
+  color: #555 !important;
+}

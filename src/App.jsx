@@ -9,7 +9,7 @@ import Ads from './pages/Service/Ads/Ads';
 import LandingPage from './pages/Service/LandingPage/LandingPage';
 import ClickSpark from './pages/Components/ClickSpark/ClickSpark';
 import ScrollToTop from "./pages/Components/ScrollToTop/ScrollToTop"
-import Website from './pages/Service/Webstite/Website';
+import Website from './pages/Service/Website/Website';
 
 function App() {
   return (
