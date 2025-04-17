@@ -5,6 +5,7 @@
 .contentSection1 h1 {
     font-size: 30px;
     font-weight: 700;
+    color: #2f679a;
 }
 
 .boxBanner img {
@@ -121,15 +122,60 @@
     text-align: center;
 }
 
-.hot:hover{
+.hot:hover {
     transform: translateY(-15px);
     transition: 0.3s ease;
 }
+
 .imageHot {
     position: absolute;
     top: 0;
     right: 40px;
 }
+
 .slideItem {
     padding: 10px;
+}
+
+/* section4 */
+
+.section4 {
+    background-color: #f5f5f5;
+    padding: 40px 0px;
+}
+
+.boxQuiTrinhLeft img {
+    width: 100%;
+}
+
+.contentQuiTrinh ul {
+    list-style: none;
+}
+
+.contentQuiTrinh ul li {
+    display: flex;
+}
+
+.contentQuiTrinh ul li svg {
+    width: 15px;
+    height: 15px;
+    margin-right: 20px;
+    color: #008cff;
+}
+
+.content span {
+    color: #008cff;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.content p {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.boxQuiTrinhLeft h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #2e6998;
 }

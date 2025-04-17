@@ -12,33 +12,43 @@ import { FaUserClock, FaFacebook, FaRegClock } from "react-icons/fa";
 import { FaCircleCheck } from "react-icons/fa6";
 import bannerads from "../../../assets/bannerads.jpg"
 import clsx from "clsx"
+import MyVerticallyCenteredModal from "../../Components/Model/MyVerticallyCenteredModal"
+import { useState } from "react"
+
 const Ads = () => {
+    const [modalShow, setModalShow] = useState(false);
+
     return (
         <>
             <Header />
-
+            <MyVerticallyCenteredModal
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+            />
             <img src={bannerads} style={{ width: '100%' }} alt="" />
-            <div className={clsx('container', styles.ads)}>
+            <div className={clsx(styles.ads)}>
                 {/* section 1 */}
                 <section>
-                    <div className="row align-items-center">
-                        <div className="col-lg-6">
-                            <div className={styles.boxBanner}>
-                                <img src={banner} alt="" />
+                    <div className="container">
+                        <div className="row align-items-center">
+                            <div className="col-lg-6">
+                                <div className={styles.boxBanner}>
+                                    <img src={banner} alt="" />
+                                </div>
                             </div>
-                        </div>
-                        <div className="col-lg-6">
-                            <div className={styles.boxContentReason}>
-                                <h1>Tại sao nên chạy quảng cáo Facebook?</h1>
-                                <ul>
-                                    <li>
-                                        <strong>Facebook:</strong> có hơn 2 tỷ người dùng hàng tháng trên toàn thế giới, tạo ra một cơ hội để tiếp cận một lượng lớn khách hàng tiềm năng.
-                                    </li>
-                                    <li>
-                                        <strong>Lý do nên chạy quảng cáo Facebook:</strong> vì nó mở ra cơ hội tiếp cận hàng triệu khách hàng một cách chính xác thông qua đối tượng, hành vi cụ thể,... Có thể tiếp cận chính xác khách hàng mục tiêu của mình
-                                    </li>
-                                </ul>
-                                <button>ĐĂNG KÝ TƯ VẤN</button>
+                            <div className="col-lg-6">
+                                <div className={styles.boxContentReason}>
+                                    <h1>Tại sao nên chạy quảng cáo Facebook?</h1>
+                                    <ul>
+                                        <li>
+                                            <strong>Facebook:</strong> có hơn 2 tỷ người dùng hàng tháng trên toàn thế giới, tạo ra một cơ hội để tiếp cận một lượng lớn khách hàng tiềm năng.
+                                        </li>
+                                        <li>
+                                            <strong>Lý do nên chạy quảng cáo Facebook:</strong> vì nó mở ra cơ hội tiếp cận hàng triệu khách hàng một cách chính xác thông qua đối tượng, hành vi cụ thể,... Có thể tiếp cận chính xác khách hàng mục tiêu của mình
+                                        </li>
+                                    </ul>
+                                    <button onClick={() => setModalShow(true)}>LIÊN HỆ TƯ VẤN</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -47,37 +57,39 @@ const Ads = () => {
                 {/* section 2 */}
 
                 <section>
-                    <div className="row">
-                        <div className="col-lg-4">
-                            <div className={styles.boxThongKe}>
-                                <div className={styles.boxLelf}>
-                                    <FaUserClock />
-                                </div>
-                                <div className={styles.boxRight}>
-                                    <h1>89%</h1>
-                                    <p>Tỷ lệ người dùng hoạt động thường xuyên</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4">
-                            <div className={styles.boxThongKe}>
-                                <div className={styles.boxLelf}>
-                                    <FaFacebook />
-                                </div>
-                                <div className={styles.boxRight}>
-                                    <h1>61 triệu</h1>
-                                    <p>Số lượng người dùng Facebook tại Việt Nam</p>
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-lg-4">
+                                <div className={styles.boxThongKe}>
+                                    <div className={styles.boxLelf}>
+                                        <FaUserClock />
+                                    </div>
+                                    <div className={styles.boxRight}>
+                                        <h1>89%</h1>
+                                        <p>Tỷ lệ người dùng hoạt động thường xuyên</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-lg-4">
-                            <div className={styles.boxThongKe}>
-                                <div className={styles.boxLelf}>
-                                    <FaRegClock />
+                            <div className="col-lg-4">
+                                <div className={styles.boxThongKe}>
+                                    <div className={styles.boxLelf}>
+                                        <FaFacebook />
+                                    </div>
+                                    <div className={styles.boxRight}>
+                                        <h1>61 triệu</h1>
+                                        <p>Số lượng người dùng Facebook tại Việt Nam</p>
+                                    </div>
                                 </div>
-                                <div className={styles.boxRight}>
-                                    <h1>2:22'</h1>
-                                    <p>Thời gian truy cập trung bình mỗi ngày</p>
+                            </div>
+                            <div className="col-lg-4">
+                                <div className={styles.boxThongKe}>
+                                    <div className={styles.boxLelf}>
+                                        <FaRegClock />
+                                    </div>
+                                    <div className={styles.boxRight}>
+                                        <h1>2:22'</h1>
+                                        <p>Thời gian truy cập trung bình mỗi ngày</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -90,7 +102,7 @@ const Ads = () => {
                     <div className="container">
                         <h1 className={styles.titleGiapPhap}>Giải pháp facebook hiệu quả</h1>
                         <div className="row ">
-                            <div className="d-flex align-items-center mb-4">
+                            <div className="row align-items-center mb-4">
                                 <div className={styles.contentLeft}>
                                     <div className={styles.content}>
                                         <h4>Content thu hút – chìa khóa cho sự thành công</h4>
@@ -106,7 +118,7 @@ const Ads = () => {
 
 
 
-                            <div className="d-flex align-items-center mb-4">
+                            <div className="row align-items-center mb-4">
                                 <div className={styles.contentLeft}>
                                     <div className={styles.boxImage}>
                                         <img src={ImageDoanhThu} alt="" />
@@ -120,7 +132,7 @@ const Ads = () => {
                                 </div>
                             </div>
 
-                            <div className="d-flex align-items-center mb-4">
+                            <div className="row align-items-center mb-4">
                                 <div className={styles.contentLeft}>
                                     <div className={styles.content}>
                                         <h4>Kiểm soát ngân sách - Lo lắng về chi phí không còn</h4>
@@ -134,7 +146,7 @@ const Ads = () => {
                                 </div>
                             </div>
 
-                            <div className="d-flex align-items-center mb-4">
+                            <div className="row align-items-center mb-4">
                                 <div className={styles.contentLeft}>
                                     <div className={styles.boxImage}>
                                         <img src={ImagePhatHanh} alt="" />
@@ -222,7 +234,8 @@ const Ads = () => {
             <section>
                 <div className={styles.boxTuVan}>
                     <span>Hãy để đội ngũ chuyên gia tư vấn cho bạn.</span>
-                    <button>Đăng ký tư vấn</button>
+                    {/* <button>Đăng ký tư vấn</button> */}
+                    <button className={styles.pulseButton} onClick={() => setModalShow(true)}>Đăng ký tư vấn</button>
                 </div>
             </section>
             <Footer />

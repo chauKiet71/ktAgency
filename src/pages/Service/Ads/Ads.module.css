@@ -9,6 +9,7 @@
 .boxContentReason h1 {
     font-size: 35px;
     font-weight: bold;
+    color: #2f679a;
 }
 
 .boxContentReason ul {
@@ -20,7 +21,8 @@
 }
 
 .boxContentReason button {
-    background-color: red;
+    background: #2A7B9B;
+    background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
     padding: 15px 30px;
     border-radius: 10px;
     color: #fff;
@@ -43,11 +45,11 @@
     color: rgb(173, 191, 191);
 }
 
-.boxRight{
+.boxRight {
     margin-left: 20px;
 }
 
-.boxRight h1{
+.boxRight h1 {
     font-size: 40px;
     font-weight: bold;
 }
@@ -61,30 +63,35 @@
 
 /* section 3 */
 
-.contentLeft{
+.contentLeft {
     width: 47.5%;
     margin-right: 5%;
 }
-.contentRight{
+
+.contentRight {
     width: 47.5%;
 }
 
-.boxImage img{
+.boxImage img {
     width: 100%;
 }
-.content h4{
+
+.content h4 {
     font-size: 30px;
     font-weight: 700;
     margin-bottom: 20px;
 }
-.content p{
+
+.content p {
     font-size: 22px;
 }
+
 .titleGiapPhap {
     text-align: center;
     font-size: 35px;
     font-weight: bold;
     margin: 40px 0px;
+    color: #2f679a;
 }
 
 /* section cuoi */
@@ -92,40 +99,49 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: red;
+    background: linear-gradient(45deg, #008cff, #eff0f1);
     padding: 20px 0px;
+    margin: 40px 0px;
 }
-.boxTuVan span{
+
+.boxTuVan span {
     font-size: 20px;
     color: #fff;
     font-weight: 500;
     margin-right: 50px;
 }
-.boxTuVan button{
+
+.boxTuVan button {
     border: none;
     outline: none;
-    background-color: yellow;
+    background: #2A7B9B;
     padding: 10px 30px;
     font-size: 18px;
     color: #fff;
     font-weight: 500;
-    border-radius: 10px;
+    border-radius: 20px;
+    animation: shakeX 0.6s infinite;
+    text-transform: uppercase;
+    font-weight: 700 !important;
 }
 
 /* section 4 */
 .boxProcess {
     display: flex;
 }
-.boxIcon svg{
+
+.boxIcon svg {
     width: 20px;
     height: 20px;
     margin-right: 20px;
 }
-.boxProcessContent span{
+
+.boxProcessContent span {
     font-weight: 700;
     font-size: 20px;
 }
-.boxProcessContent p{
+
+.boxProcessContent p {
     font-size: 16px;
     margin: 0;
     margin-top: 5px;
@@ -136,8 +152,60 @@
     font-size: 30px;
     font-weight: bold;
     margin: 40px;
+    color: #2f679a;
 }
 
 .ImageQuiTrinh img {
     width: 100%;
+}
+
+
+
+
+/* Button resets and style */
+button {
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 100px;
+    padding: 15px 20px;
+    border: 0px solid #000;
+}
+
+/* Initiate Auto-Pulse animations */
+button.pulseButton {
+    animation: borderPulse 1000ms infinite ease-out, colorShift 10000ms infinite ease-in;
+}
+
+/* Initiate color change for pulse-on-hover */
+button.pulse-button-hover {
+    animation: colorShift 10000ms infinite ease-in;
+}
+
+
+
+/* Declare border pulse animation */
+@keyframes borderPulse {
+    0% {
+        box-shadow: inset 0px 0px 0px 5px rgba(255, 255, 255, .4), 0px 0px 0px 0px rgba(255, 255, 255, 1);
+    }
+
+    100% {
+        box-shadow: inset 0px 0px 0px 3px rgba(117, 117, 255, .2), 0px 0px 0px 10px rgba(255, 255, 255, 0);
+    }
+}
+
+/* Declare shine on hover animation */
+@keyframes hoverShine {
+    0% {
+        background-image: linear-gradient(135deg, rgba(255, 255, 255, .4) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
+    }
+
+    50% {
+        background-image: linear-gradient(135deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .4) 50%, rgba(255, 255, 255, 0) 100%);
+    }
+
+    100% {
+        background-image: linear-gradient(135deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, .4) 100%);
+    }
 }

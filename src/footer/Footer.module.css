@@ -5,6 +5,9 @@
 .boxCenter h3 {
     font-size: 20px;
     font-weight: bold;
+    background: linear-gradient(45deg, #008cff, #eff0f1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .boxCenter p {
@@ -62,7 +65,11 @@
     appearance: none;
     /* ẩn mũi tên mặc định nếu muốn tự thiết kế */
 }
-.boxSendInfo h3{
+
+.boxSendInfo h3 {
     font-size: 20px;
     font-weight: bold;
+    background: linear-gradient(45deg, #008cff, #eff0f1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

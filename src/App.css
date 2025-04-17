@@ -44,6 +44,25 @@
   background: #555;
 }
 
-.slick-prev:before, .slick-next:before{
-  color: #555 !important;
+._editSlider_7skts_315 .slick-prev {
+  left: 40px !important;
+  z-index: 9;
+}
+
+._editSlider_7skts_315 .slick-next {
+  right: 40px !important;
+}
+
+._section2_17kcw_31 .slick-prev:before,
+.slick-next:before {
+  color: grey !important;
+}
+
+
+._section4_a4k6s_257 .slick-prev:before {
+  color: grey !important;
+}
+
+._section4_a4k6s_257 .slick-dots {
+  display: none !important;
 }

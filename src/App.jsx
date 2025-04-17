@@ -10,11 +10,13 @@ import LandingPage from './pages/Service/LandingPage/LandingPage';
 import ClickSpark from './pages/Components/ClickSpark/ClickSpark';
 import ScrollToTop from "./pages/Components/ScrollToTop/ScrollToTop"
 import Website from './pages/Service/Website/Website';
+import Abouts from './pages/Abouts/Abouts';
+import Facebook from './pages/Service/Facebook/Facebook';
 
 function App() {
   return (
     <>
-      
+
       <ClickSpark
         sparkColor='#285e9c'
         sparkSize={10}
@@ -25,11 +27,12 @@ function App() {
         {/* Your content here */}
 
         <BrowserRouter>
-        <ScrollToTop />
+          <ScrollToTop />
           <Routes>
             <Route path='/' element={<Home />}></Route>
-            <Route path='/gioi-thieu'></Route>
+            <Route path='/gioi-thieu' element={<Abouts />}></Route>
             <Route path='/quang-cao-facebook' element={<Ads />}></Route>
+            <Route path='/ho-tro-facebook' element={<Facebook />}></Route>
             <Route path='/landing-page' element={<LandingPage />} />
             <Route path='/website' element={<Website />} />
             <Route path='/tin-tuc' element={<News />}></Route>

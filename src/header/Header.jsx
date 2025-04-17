@@ -62,6 +62,9 @@ const Header = () => {
                                         <li className={isActive('/quang-cao-facebook') ? styles.active : ''}>
                                             <Link to='/quang-cao-facebook'>Chạy quảng cáo Facebook</Link>
                                         </li>
+                                        <li className={isActive('/ho-tro-facebook') ? styles.active : ''}>
+                                            <Link to='/ho-tro-facebook'>Hỗ trợ Facebook</Link>
+                                        </li>
                                         <li className={isActive('/landing-page') ? styles.active : ''}>
                                             <Link to='/landing-page'>Thiết kế Landing page</Link>
                                         </li>

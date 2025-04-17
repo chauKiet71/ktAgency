@@ -13,6 +13,7 @@ import cate6 from "../../../assets/website/nganh-noi-that-1.jpg"
 import cate7 from "../../../assets/website/nganh-xay-dung.jpg"
 import cate8 from "../../../assets/website/web-tin-tuc.jpg"
 import imageHot from "../../../assets/iconhot.png"
+import { FaCircleCheck } from "react-icons/fa6";
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -22,6 +23,7 @@ import MyVerticallyCenteredModal from "../../Components/Model/MyVerticallyCenter
 import { useState } from "react"
 import Button from 'react-bootstrap/Button';
 import clsx from "clsx"
+import { s } from "framer-motion/client"
 
 
 const Website = () => {
@@ -208,6 +210,100 @@ const Website = () => {
                                         <button variant="primary" onClick={() => setModalShow(true)}>LIÊN HỆ TƯ VẤN</button>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* section 4 */}
+
+            <section className={styles.section4}>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-6">
+                            <div className={styles.boxQuiTrinhLeft}>
+                                <h1>Tổng quan qui trình tạo nên website chất lượng của chúng tôi</h1>
+                                <img src={banner2} alt="" />
+                            </div>
+                        </div>
+                        <div className="col-lg-6">
+                            <div className={styles.contentQuiTrinh}>
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <FaCircleCheck />
+                                        </div>
+                                        <div className={styles.content}>
+                                            <span>B1: Tiếp nhận khách hàng</span>
+                                            <p>Bộ phận account tiếp nhận yêu cầu của khách hàng, lắng nghe những vấn đề và nỗi đau khách hàng cần giải quyết</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <FaCircleCheck />
+                                        </div>
+                                        <div className={styles.content}>
+                                            <span>B2: Nghiên cứu và phân tích yêu cầu</span>
+                                            <p>Các phòng ban liên quan sẽ thảo luận và thống nhất giải pháp tối ưu nhất cho những vấn đề của khách hàng.</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <FaCircleCheck />
+                                        </div>
+                                        <div className={styles.content}>
+                                            <span>B3: Phác thảo, thiết kế mềm</span>
+                                            <p>Bộ phận thiết kế tiến hành phác thảo bản demo dựa trên yêu cầu và giải pháp thống nhất. </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <FaCircleCheck />
+                                        </div>
+                                        <div className={styles.content}>
+                                            <span>B4: Nhận phản hồi từ khách</span>
+                                            <p>MONA sẽ tiếp nhận phản hồi và điều chỉnh bản demo liên tục để phù hợp với nhu cầu của khách hàng</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <FaCircleCheck />
+                                        </div>
+                                        <div className={styles.content}>
+                                            <span>B5: Tiến hành lập trình</span>
+                                            <p>Website được đưa vào giai đoạn lập trình với quy trình phù hợp đảm bảo đúng tiến độ và hoàn thiện tất cả tính năng cũng như giao diện như bản đã thống nhất với khách hàng trong giai đoạn phản hồi.</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <FaCircleCheck />
+                                        </div>
+                                        <div className={styles.content}>
+                                            <span>B6: Audit chuẩn SEO</span>
+                                            <p>Xây dựng cấu trúc website chuẩn SEO, tạo các liên kết, gắn mã các công cụ SEO và tool hỗ trợ chất lượng.</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <FaCircleCheck />
+                                        </div>
+                                        <div className={styles.content}>
+                                            <span>B7: Hướng dẫn sử dụng và hỗ trợ</span>
+                                            <p>MONA cung cấp bộ hướng dẫn chi tiết riêng cho từng dự án. Đội ngũ hỗ trợ luôn sẵn sàng giải đáp thắc mắc và hỗ trợ thao tác nếu cần thiết để đảm bảo khách hàng quản trị tốt website</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <FaCircleCheck />
+                                        </div>
+                                        <div className={styles.content}>
+                                            <span>B8: Bàn giao dự án</span>
+                                            <p>Nguyên tắc hoạt động của phần mềm. Vẫn tiếp tục đồng hành và hỗ trợ nếu khách hàng gặp khó khăn trong việc quản trị website</p>
+                                        </div>
+                                    </li>
+                                   
+                                </ul>
                             </div>
                         </div>
                     </div>

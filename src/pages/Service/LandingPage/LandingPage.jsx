@@ -1,5 +1,5 @@
 import styles from "../LandingPage/LandingPage.module.css"
-import "../LandingPage/LandingPage.css"
+// import "../LandingPage/LandingPage.css"
 import Header from "../../../header/Header"
 import Footer from "../../../footer/Footer"
 import bannerLadi from "../../../assets/bannerLadi.png"
@@ -37,8 +37,11 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import MyVerticallyCenteredModal from "../../Components/Model/MyVerticallyCenteredModal"
+
 const LandingPage = () => {
 
+    const [modalShow, setModalShow] = useState(false);
     const [activeIndex, setActiveIndex] = useState(0);
     var settings = {
         dots: true,
@@ -51,7 +54,10 @@ const LandingPage = () => {
 
     return (
         <>
-
+            <MyVerticallyCenteredModal
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+            />
             <Header />
             <img src={banner} style={{ width: '100%' }} alt="" />
             {/* section 1 */}
@@ -142,10 +148,10 @@ const LandingPage = () => {
                                                 <p><FaCheck /> Thu số điện thoại khách hàng bán trực tiếp</p>
                                                 <p><FaCheck /> Không mất phí hoa hồng đơn hàng</p>
                                                 <p><FaCheck /> Chạy Ads bán hàng không cần chờ xây kênh</p>
-                                                <button className={styles.btnLienHe}>LIÊN HỆ TƯ VẤN</button>
+                                                <button className={styles.btnLienHe} onClick={() => setModalShow(true)}>LIÊN HỆ TƯ VẤN</button>
                                             </div>
                                             <div className="col-lg-6">
-                                                <Slider {...settings}>
+                                                <Slider className={styles.editSlider} {...settings}>
                                                     <div>
                                                         <img src={mau1} style={{ width: '100%' }} alt="" />
                                                     </div>
@@ -177,10 +183,10 @@ const LandingPage = () => {
                                             <p><FaCheck /> Đón khách vào đặt đơn trực tiếp trên trang, chỉ cần gọi xác nhận gửi hàng</p>
                                             <p><FaCheck /> Tiết kiệm nhân lực và thời gian trực page chat khách</p>
                                             <p><FaCheck /> Đổ thông tin đặt hàng về một nơi không để đối thủ cướp khách trong bình luận</p>
-                                            <button className={styles.btnLienHe}>LIÊN HỆ TƯ VẤN</button>
+                                            <button className={styles.btnLienHe} onClick={() => setModalShow(true)}>LIÊN HỆ TƯ VẤN</button>
                                         </div>
                                         <div className="col-lg-6">
-                                            <Slider {...settings}>
+                                            <Slider className={styles.editSlider} {...settings}>
                                                 <div>
                                                     <img src={banhang1} style={{ width: '100%' }} alt="" />
                                                 </div>
@@ -211,10 +217,10 @@ const LandingPage = () => {
                                             <p><FaCheck /> Đổ data ngay sau khi khách hàng điền form về lưu trữ ngay</p>
                                             <p><FaCheck /> Dùng 1 landing page thu data khách hàng đa kênh: Facebook, Google, Zalo, TikTok</p>
                                             <p><FaCheck /> Tối ưu trải nghiệm mở web trên mobile</p>
-                                            <button className={styles.btnLienHe}>LIÊN HỆ TƯ VẤN</button>
+                                            <button className={styles.btnLienHe} onClick={() => setModalShow(true)}>LIÊN HỆ TƯ VẤN</button>
                                         </div>
                                         <div className="col-lg-6">
-                                            <Slider {...settings}>
+                                            <Slider className={styles.editSlider} {...settings}>
                                                 <div>
                                                     <img src={lead1} style={{ width: '100%' }} alt="" />
                                                 </div>
@@ -245,10 +251,10 @@ const LandingPage = () => {
                                             <p><FaCheck /> Tiết kệm chi phí so với thuê làm website</p>
                                             <p><FaCheck /> Chủ động sửa đổi thông tin và xuất bản bất cứ khi nào miễn phí</p>
                                             <p><FaCheck /> Thiết kế đẹp mắt trong thời gian triển khai ngắn</p>
-                                            <button className={styles.btnLienHe}>LIÊN HỆ TƯ VẤN</button>
+                                            <button className={styles.btnLienHe} onClick={() => setModalShow(true)}>LIÊN HỆ TƯ VẤN</button>
                                         </div>
                                         <div className="col-lg-6">
-                                            <Slider {...settings}>
+                                            <Slider className={styles.editSlider} {...settings}>
                                                 <div>
                                                     <img src={gioithieu1} style={{ width: '100%' }} alt="" />
                                                 </div>

@@ -79,7 +79,7 @@
 .btnContact {
     display: flex;
     justify-content: space-between;
-    margin: 0px 380px;
+    margin: 0px 340px;
 }
 
 .btnContact button {
@@ -102,8 +102,9 @@
     text-align: center;
     font-size: 30px;
     font-weight: 500;
-    color: rgb(65, 65, 243);
-    ;
+    background: linear-gradient(0deg, rgba(46, 226, 230, 1) 0%, rgba(92, 130, 255, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .content {
@@ -137,18 +138,23 @@
 .boxLanding {
     padding: 40px 0px;
 }
-.btnLienHe{
+
+.btnLienHe {
     border: none;
     outline: none;
     padding: 10px 20px;
     background: linear-gradient(45deg, #008cff, #eff0f1);
-    font-size: 18px ;
+    font-size: 18px;
     border-radius: 10px;
     color: #fff;
     font-weight: 600;
     margin-top: 20px;
 }
 
-.boxLanding p svg{
+.boxLanding p svg {
     color: rgb(5, 194, 5);
+}
+
+.editSlider button[type='button']:before {
+    color: #d3d7db !important;
 }
