@@ -1,5 +1,5 @@
 .section1 {
-    margin: 50px 0px;
+    margin: 60px 0px;
 }
 
 .boxContentSection1 span {
@@ -66,12 +66,12 @@
 /* section 3 */
 
 .section3 {
-    margin: 40px 0px;
+    margin: 60px 0px;
 }
 
 .section3 h1 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .boxSuMenh {
@@ -108,4 +108,10 @@
 
 .contentSection3 p {
     margin: 0;
+}
+
+@media (max-width: 576px) {
+    .section1 {
+        margin: 40px 0px;
+    }
 }

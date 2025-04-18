@@ -38,6 +38,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import MyVerticallyCenteredModal from "../../Components/Model/MyVerticallyCenteredModal"
+import clsx from "clsx"
 
 const LandingPage = () => {
 
@@ -65,10 +66,10 @@ const LandingPage = () => {
                 <div className="container">
                     <div className={styles.boxReason}>
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="col-lg-6 mt-4">
                                 <img style={{ width: '100%' }} src={bannerLadi} alt="" />
                             </div>
-                            <div className="col-lg-6">
+                            <div className="col-lg-6 mt-4">
                                 <div className={styles.contentReason}>
                                     <h1>Lý do bạn nên có Landing Page chỉ với mục đích duy nhất </h1><br /> <span className={styles.highlight}>Đó là CHUYỂN ĐỔI</span>
                                     <br />
@@ -102,46 +103,61 @@ const LandingPage = () => {
             {/* section 4 */}
 
             <section className={styles.section4}>
-                <div className="container" style={{ padding: '40px 100px' }}>
+                <div className={clsx("container", styles.pdSection4)} >
                     <h1>Sở hữu 500+ <br /> <span>mẫu landing page đẹp</span></h1>
                     <p className={styles.content}>Tổng hợp các loại landing page phổ biến – dễ dùng – tối ưu chuyển đổi, kèm mẫu tham khảo cho từng loại.
 
                     </p>
                     <div className={styles.showLanding}>
-                        <ul className={styles.tabs}>
-                            <li
-                                className={activeIndex === 0 ? styles.active : ""}
-                                onClick={() => setActiveIndex(0)}
-                            >
-                                Landing page Tiktok
-                            </li>
-                            <li
-                                className={activeIndex === 1 ? styles.active : ""}
-                                onClick={() => setActiveIndex(1)}
-                            >
-                                Landing page Bán hàng
-                            </li>
-                            <li
-                                className={activeIndex === 2 ? styles.active : ""}
-                                onClick={() => setActiveIndex(2)}
-                            >
-                                Landing page thu lead
-                            </li>
-                            <li
-                                className={activeIndex === 3 ? styles.active : ""}
-                                onClick={() => setActiveIndex(3)}
-                            >
-                                Landing page giới thiệu
-                            </li>
+                        <ul className={clsx(styles.tabs, 'row')}>
+                            <div className="col-lg-3 col-6" style={{ padding: '0' }}>
+                                <li
+                                    className={activeIndex === 0 ? styles.active : ""}
+                                    onClick={() => setActiveIndex(0)}
+                                >
+                                    Landing page Tiktok
+                                </li>
+                            </div>
+                            <div className="col-lg-3 col-6" style={{ padding: '0' }}>
+                                <li
+                                    className={activeIndex === 1 ? styles.active : ""}
+                                    onClick={() => setActiveIndex(1)}
+                                >
+                                    Landing page Bán hàng
+                                </li>
+                            </div>
+                            <div className="col-lg-3 col-6" style={{ padding: '0' }}>
+                                <li
+                                    className={activeIndex === 2 ? styles.active : ""}
+                                    onClick={() => setActiveIndex(2)}
+                                >
+                                    Landing page thu lead
+                                </li>
+                            </div>
+                            <div className="col-lg-3 col-6" style={{ padding: '0' }}>
+                                <li
+                                    className={activeIndex === 3 ? styles.active : ""}
+                                    onClick={() => setActiveIndex(3)}
+                                >
+                                    Landing page giới thiệu
+                                </li>
+                            </div>
+
+
+
+
                         </ul>
 
                         {/* Nội dung tương ứng */}
-                        <div className="tabContent">
+                        <div className="container">
+                            <div className="tabContent">
+                            </div>
+
                             {activeIndex === 0 && (
                                 <div>
                                     <div className={styles.boxLanding}>
                                         <div className="row">
-                                            <div className="col-lg-6">
+                                            <div className="col-lg-6 mt-4">
                                                 <h2>Landing page TikTok</h2>
                                                 <p><strong>Tạo landing page cho: </strong>Thời trang - Phụ kiện, Mỹ phẩm, Khóa học,Thẩm mỹ viện, Thực phẩm,...</p>
                                                 <p><strong>Mục đích sử dụng:</strong> chạy quảng cáo bán hàng trên TikTok có thu thập số điện thoại để gọi xác nhận gửi hàng</p>
@@ -150,7 +166,7 @@ const LandingPage = () => {
                                                 <p><FaCheck /> Chạy Ads bán hàng không cần chờ xây kênh</p>
                                                 <button className={styles.btnLienHe} onClick={() => setModalShow(true)}>LIÊN HỆ TƯ VẤN</button>
                                             </div>
-                                            <div className="col-lg-6">
+                                            <div className="col-lg-6 mt-4">
                                                 <Slider className={styles.editSlider} {...settings}>
                                                     <div>
                                                         <img src={mau1} style={{ width: '100%' }} alt="" />
@@ -176,7 +192,7 @@ const LandingPage = () => {
                             {activeIndex === 1 && (
                                 <div className={styles.boxLanding}>
                                     <div className="row">
-                                        <div className="col-lg-6">
+                                        <div className="col-lg-6 mt-4">
                                             <h2>Landing page Bán hàng</h2>
                                             <p><strong>Tạo landing page cho: </strong>Quần Áo - Phụ kiện thời trang, Mỹ phẩm, Gia dụng, Đồng hồ, Trang sức,...                                            </p>
                                             <p><strong>Mục đích sử dụng:</strong> chạy quảng cáo Facebook, Google, Zalo điều hướng khách bấm vào đường link để đặt đơn trực tiếp</p>
@@ -185,7 +201,7 @@ const LandingPage = () => {
                                             <p><FaCheck /> Đổ thông tin đặt hàng về một nơi không để đối thủ cướp khách trong bình luận</p>
                                             <button className={styles.btnLienHe} onClick={() => setModalShow(true)}>LIÊN HỆ TƯ VẤN</button>
                                         </div>
-                                        <div className="col-lg-6">
+                                        <div className="col-lg-6 mt-4">
                                             <Slider className={styles.editSlider} {...settings}>
                                                 <div>
                                                     <img src={banhang1} style={{ width: '100%' }} alt="" />
@@ -210,7 +226,7 @@ const LandingPage = () => {
                             {activeIndex === 2 && (
                                 <div className={styles.boxLanding}>
                                     <div className="row">
-                                        <div className="col-lg-6">
+                                        <div className="col-lg-6 mt-4">
                                             <h2>Landing Page Thu lead</h2>
                                             <p><strong>Tạo landing page cho: </strong>Khóa học - Giáo dục, Spa, Phòng tập Gym - Yoga, Du lịch, Bất động sản,...                                            </p>
                                             <p><strong>Mục đích sử dụng:</strong> Thu thập thông tin khách hàng tiềm năng (Họ tên, Số điện thoại, Email,...) làm phễu Marketing cho đội Sales liên hệ tư vấn</p>
@@ -219,7 +235,7 @@ const LandingPage = () => {
                                             <p><FaCheck /> Tối ưu trải nghiệm mở web trên mobile</p>
                                             <button className={styles.btnLienHe} onClick={() => setModalShow(true)}>LIÊN HỆ TƯ VẤN</button>
                                         </div>
-                                        <div className="col-lg-6">
+                                        <div className="col-lg-6 mt-4">
                                             <Slider className={styles.editSlider} {...settings}>
                                                 <div>
                                                     <img src={lead1} style={{ width: '100%' }} alt="" />
@@ -244,7 +260,7 @@ const LandingPage = () => {
                             {activeIndex === 3 && (
                                 <div className={styles.boxLanding}>
                                     <div className="row">
-                                        <div className="col-lg-6">
+                                        <div className="col-lg-6 mt-4">
                                             <h2>Landing Page Giới thiệu</h2>
                                             <p><strong>Tạo landing page cho: </strong>Luật, Tài chính, Nội thất, Agency, Cuộc thi, Triển lãm, Du lịch, In ấn,...</p>
                                             <p><strong>Mục đích sử dụng:</strong> Đăng lên mạng xã hội (Fanpage, Zalo, Bio TikTok,...) giới thiệu công ty; ra mắt sản phẩm mới; truyền thông sự kiện</p>
@@ -253,7 +269,7 @@ const LandingPage = () => {
                                             <p><FaCheck /> Thiết kế đẹp mắt trong thời gian triển khai ngắn</p>
                                             <button className={styles.btnLienHe} onClick={() => setModalShow(true)}>LIÊN HỆ TƯ VẤN</button>
                                         </div>
-                                        <div className="col-lg-6">
+                                        <div className="col-lg-6 mt-4">
                                             <Slider className={styles.editSlider} {...settings}>
                                                 <div>
                                                     <img src={gioithieu1} style={{ width: '100%' }} alt="" />
@@ -291,9 +307,21 @@ const LandingPage = () => {
                         <p>Hãy nói cho chúng tôi biết nhu cầu của bạn</p>
                         <p>Chúng tôi sẽ mang tới dịch vụ tốt nhất và phù hợp nhất với nhu cầu của bạn!</p>
 
-                        <div className={styles.btnContact}>
-                            <button>Nhận báo giá chi tiết</button>
-                            <button>Gọi tư vấn: 0327142982</button>
+                        <div className="row">
+                            <div className={styles.btnContact}>
+                                {/* <div className={clsx("col-lg-6", styles.right)}>
+                                    <button>Nhận báo giá chi tiết</button>
+                                </div> */}
+                                <div className={clsx("col-lg-12 text-center")}>
+                                    {/* <button>Gọi tư vấn: 0327142982</button> */}
+
+                                    <div className={styles.wrap}>
+                                        <button className={styles.button}>Gọi tư vấn: 0327142982</button>
+                                    </div>
+                                </div>
+                            </div>
+
+
                         </div>
                     </div>
                 </div>

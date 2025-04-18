@@ -1,3 +1,7 @@
+.boxLelf {
+    width: 100%;
+}
+
 .boxLelf p {
     margin-bottom: 5px;
 }
@@ -5,9 +9,7 @@
 .boxCenter h3 {
     font-size: 20px;
     font-weight: bold;
-    background: linear-gradient(45deg, #008cff, #eff0f1);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #366e9f;
 }
 
 .boxCenter p {
@@ -69,7 +71,11 @@
 .boxSendInfo h3 {
     font-size: 20px;
     font-weight: bold;
-    background: linear-gradient(45deg, #008cff, #eff0f1);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #366e9f;
+}
+
+@media (max-width: 576px) {
+    .header {
+        display: none;
+    }
 }

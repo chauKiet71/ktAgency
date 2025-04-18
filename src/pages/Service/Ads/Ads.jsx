@@ -31,12 +31,12 @@ const Ads = () => {
                 <section>
                     <div className="container">
                         <div className="row align-items-center">
-                            <div className="col-lg-6">
+                            <div className="col-lg-6 mt-4">
                                 <div className={styles.boxBanner}>
                                     <img src={banner} alt="" />
                                 </div>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="col-lg-6 mt-4">
                                 <div className={styles.boxContentReason}>
                                     <h1>Tại sao nên chạy quảng cáo Facebook?</h1>
                                     <ul>
@@ -59,7 +59,7 @@ const Ads = () => {
                 <section>
                     <div className="container">
                         <div className="row">
-                            <div className="col-lg-4">
+                            <div className="col-lg-4 mt-4">
                                 <div className={styles.boxThongKe}>
                                     <div className={styles.boxLelf}>
                                         <FaUserClock />
@@ -70,7 +70,7 @@ const Ads = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-4">
+                            <div className="col-lg-4 mt-4">
                                 <div className={styles.boxThongKe}>
                                     <div className={styles.boxLelf}>
                                         <FaFacebook />
@@ -81,7 +81,7 @@ const Ads = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-4">
+                            <div className="col-lg-4 mt-4">
                                 <div className={styles.boxThongKe}>
                                     <div className={styles.boxLelf}>
                                         <FaRegClock />
@@ -101,65 +101,65 @@ const Ads = () => {
                 <section>
                     <div className="container">
                         <h1 className={styles.titleGiapPhap}>Giải pháp facebook hiệu quả</h1>
-                        <div className="row ">
-                            <div className="row align-items-center mb-4">
-                                <div className={styles.contentLeft}>
-                                    <div className={styles.content}>
-                                        <h4>Content thu hút – chìa khóa cho sự thành công</h4>
-                                        <p><strong>Nội dung hấp dẫn - Chìa khóa cho sự thành công:</strong> Tạo nội dung thu hút và chất lượng để thu hút sự quan tâm và tương tác từ đối tượng mục tiêu, là yếu tố rất quan trọng định hình sự thành công của chiến dịch.</p>
-                                    </div>
-                                </div>
-                                <div className={styles.contentRight}>
-                                    <div className={styles.boxImage}>
-                                        <img src={ImageContent} alt="" />
-                                    </div>
+                        {/* <div className="row "> */}
+                        <div className="row align-items-center mb-4">
+                            <div className="col-lg-6 order-1">
+                                <div className={styles.content}>
+                                    <h4>Content thu hút – chìa khóa cho sự thành công</h4>
+                                    <p><strong>Nội dung hấp dẫn - Chìa khóa cho sự thành công:</strong> Tạo nội dung thu hút và chất lượng để thu hút sự quan tâm và tương tác từ đối tượng mục tiêu, là yếu tố rất quan trọng định hình sự thành công của chiến dịch.</p>
                                 </div>
                             </div>
-
-
-
-                            <div className="row align-items-center mb-4">
-                                <div className={styles.contentLeft}>
-                                    <div className={styles.boxImage}>
-                                        <img src={ImageDoanhThu} alt="" />
-                                    </div>
-                                </div>
-                                <div className={styles.contentRight}>
-                                    <div className={styles.content}>
-                                        <h4>Xác định mục tiêu chính xác - Đạt doanh thu dễ dàng</h4>
-                                        <p>Đặt mục tiêu cụ thể cho chiến dịch và đảm bảo rằng bạn đang tiếp cận đúng đối tượng mục tiêu. Điều này giúp tăng khả năng chuyển đổi thành doanh thu.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="row align-items-center mb-4">
-                                <div className={styles.contentLeft}>
-                                    <div className={styles.content}>
-                                        <h4>Kiểm soát ngân sách - Lo lắng về chi phí không còn</h4>
-                                        <p>Quản lý ngân sách quảng cáo một cách chặt chẽ, thiết lập giới hạn ngân sách hàng ngày hoặc tổng cộng để không vượt quá nguồn tài chính của bạn.</p>
-                                    </div>
-                                </div>
-                                <div className={styles.contentRight}>
-                                    <div className={styles.boxImage}>
-                                        <img src={ImageNganSach} alt="" />
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="row align-items-center mb-4">
-                                <div className={styles.contentLeft}>
-                                    <div className={styles.boxImage}>
-                                        <img src={ImagePhatHanh} alt="" />
-                                    </div>
-                                </div>
-                                <div className={styles.contentRight}>
-                                    <div className={styles.content}>
-                                        <h4>Phát hành nhanh - Tăng tương tác</h4>
-                                        <p>Sử dụng công cụ quảng cáo trên Facebook để phát hành chiến dịch nhanh chóng và theo dõi kết quả thời gian thực để tối ưu hóa hiệu suất và tương tác.</p>
-                                    </div>
+                            <div className="col-lg-6 order-2 order-sm-2">
+                                <div className={styles.boxImage}>
+                                    <img src={ImageContent} alt="" />
                                 </div>
                             </div>
                         </div>
+
+
+
+                        <div className="row align-items-center mb-4">
+                            <div className="col-lg-6 order-2 order-sm-1">
+                                <div className={styles.boxImage}>
+                                    <img src={ImageDoanhThu} alt="" />
+                                </div>
+                            </div>
+                            <div className="col-lg-6 order-1">
+                                <div className={styles.content}>
+                                    <h4>Xác định mục tiêu chính xác - Đạt doanh thu dễ dàng</h4>
+                                    <p>Đặt mục tiêu cụ thể cho chiến dịch và đảm bảo rằng bạn đang tiếp cận đúng đối tượng mục tiêu. Điều này giúp tăng khả năng chuyển đổi thành doanh thu.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="row align-items-center mb-4">
+                            <div className="col-lg-6">
+                                <div className={styles.content}>
+                                    <h4>Kiểm soát ngân sách - Lo lắng về chi phí không còn</h4>
+                                    <p>Quản lý ngân sách quảng cáo một cách chặt chẽ, thiết lập giới hạn ngân sách hàng ngày hoặc tổng cộng để không vượt quá nguồn tài chính của bạn.</p>
+                                </div>
+                            </div>
+                            <div className="col-lg-6">
+                                <div className={styles.boxImage}>
+                                    <img src={ImageNganSach} alt="" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="row align-items-center mb-4">
+                            <div className="col-lg-6 order-2 order-sm-1">
+                                <div className={styles.boxImage}>
+                                    <img src={ImagePhatHanh} alt="" />
+                                </div>
+                            </div>
+                            <div className="col-lg-6 order-1 order-sm-2">
+                                <div className={styles.content}>
+                                    <h4>Phát hành nhanh - Tăng tương tác</h4>
+                                    <p>Sử dụng công cụ quảng cáo trên Facebook để phát hành chiến dịch nhanh chóng và theo dõi kết quả thời gian thực để tối ưu hóa hiệu suất và tương tác.</p>
+                                </div>
+                            </div>
+                        </div>
+                        {/* </div> */}
                     </div>
                 </section>
 
@@ -231,11 +231,24 @@ const Ads = () => {
             </div>
             {/* section cuoi */}
 
-            <section>
-                <div className={styles.boxTuVan}>
-                    <span>Hãy để đội ngũ chuyên gia tư vấn cho bạn.</span>
-                    {/* <button>Đăng ký tư vấn</button> */}
-                    <button className={styles.pulseButton} onClick={() => setModalShow(true)}>Đăng ký tư vấn</button>
+            <section className={styles.section5}>
+                <div className="container">
+                    <div className={styles.boxTuVan}>
+                        <div className="row">
+                            <div className={styles.boxCenter}>
+                                <div className={clsx("col-lg-6", styles.right)}>
+                                    <span>Hãy để đội ngũ chuyên gia tư vấn cho bạn.</span>
+                                </div>
+                                <div className={clsx("col-lg-6", styles.left)}>
+                                    <button className={styles.pulseButton} onClick={() => setModalShow(true)}>Đăng ký tư vấn</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        {/* <button>Đăng ký tư vấn</button> */}
+
+                    </div>
                 </div>
             </section>
             <Footer />

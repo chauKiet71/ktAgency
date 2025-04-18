@@ -39,7 +39,16 @@ const Website = () => {
             console.log(
                 `Slider Changed to: ${index + 1}, background: #222; color: #bada55`
             );
-        }
+        },
+        responsive: [
+            {
+                breakpoint: 576, // dưới 576px (mobile)
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                },
+            },
+        ],
     };
 
 
@@ -146,7 +155,7 @@ const Website = () => {
                         <p>Chúng tôi cung cấp các gói thiết kế web với mức giá cạnh tranh trên thị trường.</p>
                     </div>
                     <div className="row">
-                        <div className={clsx("col-lg-4", styles.hot)}>
+                        <div className={clsx("col-lg-4 mt-4", styles.hot)}>
                             <div className={styles.combo}>
                                 <div className={styles.comboTitle}>
                                     <span>Gói cơ bản</span>
@@ -168,7 +177,7 @@ const Website = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className={clsx("col-lg-4 position-relative", styles.hot)}>
+                        <div className={clsx("col-lg-4 mt-4 position-relative", styles.hot)}>
                             <img src={imageHot} className={styles.imageHot} alt="" />
                             <div className={styles.combo}>
                                 <div className={styles.comboTitle}>
@@ -190,7 +199,7 @@ const Website = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className={clsx("col-lg-4", styles.hot)}>
+                        <div className={clsx("col-lg-4 mt-4", styles.hot)}>
                             <div className={styles.combo}>
                                 <div className={styles.comboTitle}>
                                     <span>Gói Premium</span>
@@ -221,13 +230,13 @@ const Website = () => {
             <section className={styles.section4}>
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-6">
+                        <div className="col-lg-6 mt-4">
                             <div className={styles.boxQuiTrinhLeft}>
                                 <h1>Tổng quan qui trình tạo nên website chất lượng của chúng tôi</h1>
                                 <img src={banner2} alt="" />
                             </div>
                         </div>
-                        <div className="col-lg-6">
+                        <div className="col-lg-6 mt-4">
                             <div className={styles.contentQuiTrinh}>
                                 <ul>
                                     <li>
@@ -302,7 +311,7 @@ const Website = () => {
                                             <p>Nguyên tắc hoạt động của phần mềm. Vẫn tiếp tục đồng hành và hỗ trợ nếu khách hàng gặp khó khăn trong việc quản trị website</p>
                                         </div>
                                     </li>
-                                   
+
                                 </ul>
                             </div>
                         </div>

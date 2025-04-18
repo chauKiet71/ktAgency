@@ -60,7 +60,7 @@ const Abouts = () => {
                     <h1>Sứ mệnh mang đến <span>cho khách hàng</span></h1>
 
                     <div className="row">
-                        <div className="col-lg-4">
+                        <div className="col-lg-4 mt-4">
                             <div className={styles.boxSuMenh}>
                                 <div className={styles.boxImage}>
                                     <FaRegLightbulb />
@@ -71,7 +71,7 @@ const Abouts = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4">
+                        <div className="col-lg-4 mt-4">
                             <div className={styles.boxSuMenh}>
                                 <div className={styles.boxImage}>
                                     <FaMagnet />
@@ -82,7 +82,7 @@ const Abouts = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4">
+                        <div className="col-lg-4 mt-4">
                             <div className={styles.boxSuMenh}>
                                 <div className={styles.boxImage}>
                                     <FaRegArrowAltCircleUp />

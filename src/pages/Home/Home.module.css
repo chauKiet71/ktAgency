@@ -22,14 +22,14 @@
 
 /* section2 */
 .section2 {
-    margin-bottom: 40px;
+    margin-bottom: 80px;
 }
 
 .section2 h1 {
     text-align: center;
     font-size: 30px;
     font-weight: 700;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     color: #2f679a;
 }
 
@@ -65,11 +65,13 @@
 
 .hoverImage {
     position: relative;
+    z-index: -9;
 }
 
 .hoverImage img {
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
+
 }
 
 .backgroundText {
@@ -127,7 +129,7 @@
 /* section 4  */
 
 .section4 {
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
 .section4 h1 {
@@ -153,7 +155,7 @@
 
 .boxStar svg {
     margin-left: 10px;
-    color: yellow;
+    color: #ffca00;
     width: 20px;
     height: 20px;
 }
@@ -181,6 +183,7 @@
 
 .editSlider {
     padding: 10px;
+    z-index: 9;
 }
 
 .boxnews {
@@ -203,14 +206,13 @@
 
 
 .section5 {
-    margin: 40px 0px;
+    margin: 10px 0px 60px 0px;
 }
 
 .section5 h1 {
     text-align: center;
     font-size: 30px;
     font-weight: 700;
-    margin-bottom: 20px;
     color: #2f679a;
 }
 
@@ -219,4 +221,10 @@
     font-weight: bold;
     color: #fff;
     transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 576px) {
+    .section1{
+        margin: 20px 0px;
+    }
 }

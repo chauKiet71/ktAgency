@@ -5,3 +5,15 @@
     margin: 20px 0px;
     color: #2f679a;
 }
+
+.titlePostHighlight {
+    font-size: 18px;
+    color: #4e4e4e;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.line {
+    width: 100px;
+    border-bottom: 3px solid #2f679a;
+    margin: 5px 0px 10px 0px;
+}

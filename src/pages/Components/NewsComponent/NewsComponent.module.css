@@ -3,31 +3,34 @@
     margin-bottom: 20px;
 }
 
-.boxImage{
+/* .boxImage{
     width: 30%;
-}
-.boxImage img{
+} */
+.boxImage img {
     width: 100%;
 }
-.boxContent {
+
+/* .boxContent {
     width: 70%;
     margin-left: 20px;
-}
+} */
 
-.boxContent h4{
+.boxContent h4 {
     font-size: 20px;
 }
-.boxContent p{
+
+.boxContent p {
     margin-bottom: 10px;
 }
 
-.boxContent a{
+.boxContent a {
     text-decoration: none;
     color: #333;
     font-weight: 600;
     font-size: 14px;
 }
-.boxContent a:hover{
+
+.boxContent a:hover {
     color: red
 }
 
@@ -39,19 +42,34 @@
 .boxImagePostNew {
     width: 30%;
 }
+
 .boxImagePostNew img {
     width: 100%;
 }
+
 .contentPostNew {
     width: 66%;
     margin-left: 4%;
 }
-.contentPostNew span{
+
+.contentPostNew span {
     font-weight: 600;
     font-size: 18px;
 }
-.contentPostNew p{
+
+.contentPostNew p {
     margin: 0;
     font-size: 14px;
-    color: rgb(100, 100, 247);
+    color: #2f679a;
+}
+
+.boxNews {
+    box-shadow: 2px 2px 5px 2px rgba(157, 155, 155, 0.3);
+    padding: 0px 0px 1rem 0px;
+}
+
+.contentPostNew a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
 }

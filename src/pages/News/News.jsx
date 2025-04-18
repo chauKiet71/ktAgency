@@ -32,7 +32,13 @@ const News = () => {
             'image': ImageNews,
             'title': 'Quảng cáo Facebook như thế nào là hiệu quả',
             'date': '05 Tháng 01, 2024',
-        }
+        },
+        {
+            'id': 2,
+            'image': ImageNews,
+            'title': 'Quảng cáo Facebook như thế nào là hiệu quả',
+            'date': '05 Tháng 01, 2024',
+        },
     ]
 
     return (
@@ -48,6 +54,8 @@ const News = () => {
                         ))}
                     </div>
                     <div className="col-lg-4">
+                        <span className={styles.titlePostHighlight}>Bài viết nổi bật</span>
+                        <div className={styles.line}></div>
                         {
                             listNewsPost.map(item => (
                                 <NewsPostItem key={item.id} {...item} />

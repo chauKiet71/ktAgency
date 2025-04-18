@@ -63,7 +63,6 @@
 
 .contentSection3 {
     text-align: center;
-    margin: 40px 0px;
 }
 
 .contentSection3 h1 {
@@ -178,4 +177,21 @@
     font-size: 30px;
     font-weight: 700;
     color: #2e6998;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 576px) {
+    .boxCategory img {
+        width: 120px;
+        height: 100px;
+    }
+    .contentSection3 {
+        margin: 0;
+    }
+    .section4 {
+        padding: 10px 0px 20px 0px;
+    }
+    .boxQuiTrinhLeft h1{
+        margin-bottom: 20px;
+    }
 }

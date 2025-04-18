@@ -5,7 +5,7 @@
 
 .boxReason {
     background-color: #fff;
-    padding: 50px;
+    padding: 1.5rem 0px 3rem 0px;
 }
 
 .contentReason h1 {
@@ -40,7 +40,6 @@
 
 .titleSection2 h2 {
     background-color: rgb(255, 0, 162);
-    margin: 0px 190px;
     padding: 10px 0px;
     border-radius: 10px;
     color: #fff;
@@ -65,10 +64,11 @@
     font-size: 30px;
     font-weight: 700;
     margin: 10px 0px 10px 0px;
+    color: #7f7f8a;
 }
 
 .boxContact span {
-    color: rgb(255, 157, 0);
+    color: #266fa5;
 }
 
 .boxContact p {
@@ -76,19 +76,10 @@
     margin-bottom: 5px;
 }
 
-.btnContact {
-    display: flex;
-    justify-content: space-between;
-    margin: 0px 340px;
-}
 
 .btnContact button {
-    border: none;
-    outline: none;
-    background-color: rgb(255, 0, 162);
-    padding: 10px 20px;
-    border-radius: 10px;
-    color: #fff;
+    margin-top: 20px;
+    text-align: center;
 }
 
 /* section 4 */
@@ -109,7 +100,7 @@
 
 .content {
     text-align: center;
-    margin: 20px 0px;
+    margin: 20px 250px;
     font-size: 18px;
 }
 
@@ -121,6 +112,9 @@
     display: flex;
     justify-content: center;
     list-style: none;
+    margin: 0px 100px;
+    padding: 0 !important;
+    /* padding: 0; */
 }
 
 .tabs li {
@@ -128,6 +122,7 @@
     cursor: pointer;
     padding-bottom: 10px;
     font-size: 18px;
+    text-align: center;
 }
 
 .active {
@@ -136,7 +131,7 @@
 }
 
 .boxLanding {
-    padding: 40px 0px;
+    padding-bottom: 40px;
 }
 
 .btnLienHe {
@@ -157,4 +152,164 @@
 
 .editSlider button[type='button']:before {
     color: #d3d7db !important;
+}
+
+.pdSection4 {
+    padding: 40px 10px;
+}
+
+.btnContact {
+    display: flex;
+    justify-content: center;
+}
+
+.right {
+    text-align: right;
+    margin-right: 20px;
+}
+
+.right button {
+    background: linear-gradient(45deg, #008cff, #fcfeff);
+}
+
+.left {
+    text-align: left;
+    margin-left: 20px;
+}
+
+
+
+@media (max-width: 576px) {
+    .boxReason {
+        background: none;
+        padding: 0;
+    }
+
+    .btnContact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .boxContact button {
+        margin-top: 10px;
+    }
+
+    .left,
+    .right {
+        text-align: center;
+        margin: 0;
+    }
+
+    .tabs {
+        padding: 0;
+        margin: 0;
+    }
+
+    .tabs li {
+        padding: 0;
+        font-size: 16px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .content {
+        margin: 0;
+    }
+
+    .section1 {
+        padding: 30px 0px;
+    }
+}
+
+.wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    min-width: 340px;
+    /* min-height: 60px; */
+    display: inline-flex;
+    font-family: 'Nunito', sans-serif;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #313133;
+    background: #4FD1C5;
+    background: linear-gradient(90deg, rgba(129, 230, 217, 1) 0%, rgba(79, 209, 197, 1) 100%);
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 12px 12px 24px rgba(79, 209, 197, .64);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+}
+
+.button::before {
+    content: '';
+    border-radius: 1000px;
+    min-width: calc(350px + 12px);
+    min-height: calc(60px + 12px);
+    border: 6px solid #00FFCB;
+    box-shadow: 0 0 60px rgba(0, 255, 203, .64);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+}
+
+.button:hover,
+.button:focus {
+    color: #313133;
+    transform: translateY(-6px);
+}
+
+.button:hover::before,
+.button:focus::before {
+    opacity: 1;
+}
+
+.button::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 6px solid #00FFCB;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+}
+
+.button:hover::after,
+.button:focus::after {
+    animation: none;
+    display: none;
+}
+
+@keyframes ring {
+    0% {
+        width: 30px;
+        height: 30px;
+        opacity: 1;
+    }
+
+    100% {
+        width: 300px;
+        height: 300px;
+        opacity: 0;
+    }
 }
