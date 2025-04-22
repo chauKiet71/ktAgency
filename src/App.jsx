@@ -12,8 +12,8 @@ import ScrollToTop from "./pages/Components/ScrollToTop/ScrollToTop"
 import Website from './pages/Service/Website/Website';
 import Abouts from './pages/Abouts/Abouts';
 import Facebook from './pages/Service/Facebook/Facebook';
-import New1 from './pages/News/new1/new1';
-import New2 from './pages/News/new2/New2';
+import New1 from './pages/News/New1/new1';
+import New2 from './pages/News/New2/New2';
 
 function App() {
   return (
