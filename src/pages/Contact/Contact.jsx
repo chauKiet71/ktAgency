@@ -4,6 +4,8 @@ import styles from "../Contact/Contact.module.css"
 
 import { FaLinkedin, FaFacebook, FaTiktok, FaClock, FaPhone } from "react-icons/fa6";
 import { useState } from "react";
+import Flash from "../../assets/flash.png"
+
 
 const Contact = () => {
 
@@ -42,33 +44,32 @@ const Contact = () => {
     return (
         <>
             <Header />
-            <div className="container">
+            <div className="container mt-3 mb-5">
                 <h1 className={styles.title}>THÔNG TIN LIÊN HỆ</h1>
                 <div className="row">
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 mt-3">
                         <form className={styles.contactForm} onSubmit={handleSubmit}>
 
-                            {/* <div className={styles.row}> */}
-                            <input type="text" placeholder="Họ tên" onChange={handleChange} />
-                            <input type="email" placeholder="Email" onChange={handleChange} />
-                            {/* </div> */}
-                            <input type="text" placeholder="Số điện thoại" onChange={handleChange} />
-                            <select onChange={handleChange}>
-                                <option disabled selected>Chọn dịch vụ</option>
+
+                            <input type="text" placeholder="Họ tên" />
+                            <input type="email" placeholder="Email" />
+                            <input type="text" placeholder="Số điện thoại" />
+                            <select defaultValue="choose">
+                                <option value="choose">Chọn dịch vụ</option>
                                 <option value="web">Thiết kế website</option>
                                 <option value="seo">Dịch vụ SEO</option>
                                 <option value="ads">Quảng cáo Google/Facebook</option>
                             </select>
 
-                            <textarea placeholder="Nội dung tin nhắn" onChange={handleChange}></textarea>
+                            <textarea placeholder="Nội dung tin nhắn" ></textarea>
 
                             <div className={styles.btnSend}>
-                                <button type="submit">Gửi</button>
+                                <button type="submit"> <img src={Flash} alt="" /> Yêu cầu tư vấn <span>miễn phí</span></button>
                             </div>
                         </form>
                     </div>
 
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 mt-3">
                         <div className={styles.boxInfo}>
                             <div className={styles.boxIcon}><FaPhone /></div>
                             <div className={styles.boxContent}>
@@ -98,6 +99,7 @@ const Contact = () => {
                                 <div className={styles.icon}>
                                     <FaLinkedin />
                                 </div>
+
                             </div>
                         </div>
                     </div>

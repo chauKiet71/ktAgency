@@ -20,6 +20,45 @@ import { useInView } from "react-intersection-observer";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import clsx from "clsx"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react"
+
+const newsList = [
+    {
+        image: News,
+        title: "Content là gì? Cách nhận biết & khác phục vấn đề nội dung mỏng trên website",
+        description: "Khám phá Content là gì? TÌm hiểu định nghĩa, vai trò và cách ứng dụng content hiệu quả trong chiến lượt content  marketing. Tìm hiểu ngay"
+    },
+    {
+        image: News,
+        title: "Content là gì? Cách nhận biết & khác phục vấn đề nội dung mỏng trên website",
+        description: "Khám phá Content là gì? TÌm hiểu định nghĩa, vai trò và cách ứng dụng content hiệu quả trong chiến lượt content  marketing. Tìm hiểu ngay"
+    },
+    {
+        image: News,
+        title: "Content là gì? Cách nhận biết & khác phục vấn đề nội dung mỏng trên website",
+        description: "Khám phá Content là gì? TÌm hiểu định nghĩa, vai trò và cách ứng dụng content hiệu quả trong chiến lượt content  marketing. Tìm hiểu ngay"
+    },
+    {
+        image: News,
+        title: "Content là gì? Cách nhận biết & khác phục vấn đề nội dung mỏng trên website",
+        description: "Khám phá Content là gì? TÌm hiểu định nghĩa, vai trò và cách ứng dụng content hiệu quả trong chiến lượt content  marketing. Tìm hiểu ngay"
+    },
+    {
+        image: News,
+        title: "Content là gì? Cách nhận biết & khác phục vấn đề nội dung mỏng trên website",
+        description: "Khám phá Content là gì? TÌm hiểu định nghĩa, vai trò và cách ứng dụng content hiệu quả trong chiến lượt content  marketing. Tìm hiểu ngay"
+    },
+    {
+        image: News,
+        title: "Content là gì? Cách nhận biết & khác phục vấn đề nội dung mỏng trên website",
+        description: "Khám phá Content là gì? TÌm hiểu định nghĩa, vai trò và cách ứng dụng content hiệu quả trong chiến lượt content  marketing. Tìm hiểu ngay"
+    },
+];
+
+
 const Home = () => {
 
     const { ref, inView } = useInView({
@@ -41,7 +80,23 @@ const Home = () => {
                     slidesToScroll: 1,
                 },
             },
-        ],  
+        ],
+    };
+    var news = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 576, // dưới 576px (mobile)
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+        ],
     };
 
 
@@ -58,10 +113,10 @@ const Home = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-12 col-lg-6 mt-4">
-                                <img src={BannerHome1} style={{ width: '100%' }} alt="" />
+                                <img src={BannerHome1} style={{ width: '100%' }} alt=""  />
                             </div>
-                            <div className="col-12 col-lg-6 mt-4">
-                                <div className={styles.contentSection1}>
+                            <div className="col-12 col-lg-6 mt-4" >
+                                <div className={styles.contentSection1} >
                                     <h1>Tại sao bạn cần chọn
                                         Vina software?</h1>
                                     <p>VNS cung cấp dịch vụ Thiết kế website trọn gói với giao diện đẹp, độc đáo, sáng tạo là Đơn vị chuyên tư vấn và triển khai hoạt động Marketing số với nền tảng Google , Facebook mang tính ứng dụng cao và phù hợp với từng cá nhân, doanh nghiệp. Với mục tiêu cung cấp nhiều gói sản phẩm phong phú về mẫu mã và các tính năng linh hoạt cho nhiều loại hình website như giới thiệu công ty, bán hàng, trang tin tức, thương mại điện tử… cùng với nhiều giao diện phong phú đa dạng độc đáo đã được VNS lọc chọn và đúc kết nhằm giới thiệu tới khách hàng với mong muốn có một website nhanh, đẹp, hiệu quả và giá cả hợp lý.</p>
@@ -90,7 +145,7 @@ const Home = () => {
                                     </div>
                                 </Link>
                             </div>
-                            <div className="col-lg-3 mt-4">
+                            <div className="col-lg-3 mt-4" >
                                 <Link to='/quang-cao-facebook'>
                                     <div className={styles.boxService}>
                                         <div className={styles.hoverImage}>
@@ -365,36 +420,21 @@ const Home = () => {
                         <h1>TIN TỨC</h1>
 
                         <div className="row">
-                            <div className="col-lg-4 mt-4">
-                                <div className={styles.boxnews}>
-                                    <img src={News} alt="" />
-                                    <div className={styles.contentNews}>
-                                        <h6>Content là gì? Cách nhận biết & khác phục vấn đề nội dung mỏng trên website</h6>
-                                        <p>Khám phá Content là gì? TÌm hiểu định nghĩa, vai trò và cách ứng dụng content hiệu quả trong chiến lượt content  marketing. Tìm hiểu ngay</p>
-                                        <div className={styles.line}></div>
+                            <Slider className={styles.editSlider} {...news}>
+                                {newsList.map((news, index) => (
+                                    <div className={clsx("col-lg-4 mt-2", styles.editSlider)} key={index}>
+                                        <div className={styles.boxnews}>
+                                            <img src={news.image} alt="" />
+                                            <div className={styles.contentNews}>
+                                                <h6>{news.title}</h6>
+                                                <p>{news.description}</p>
+                                                <div className={styles.line}></div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 mt-4">
-                                <div className={styles.boxnews}>
-                                    <img src={News} alt="" />
-                                    <div className={styles.contentNews}>
-                                        <h6>Content là gì? Cách nhận biết & khác phục vấn đề nội dung mỏng trên website</h6>
-                                        <p>Khám phá Content là gì? TÌm hiểu định nghĩa, vai trò và cách ứng dụng content hiệu quả trong chiến lượt content  marketing. Tìm hiểu ngay</p>
-                                        <div className={styles.line}></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 mt-4">
-                                <div className={styles.boxnews}>
-                                    <img src={News} alt="" />
-                                    <div className={styles.contentNews}>
-                                        <h6>Content là gì? Cách nhận biết & khác phục vấn đề nội dung mỏng trên website</h6>
-                                        <p>Khám phá Content là gì? TÌm hiểu định nghĩa, vai trò và cách ứng dụng content hiệu quả trong chiến lượt content  marketing. Tìm hiểu ngay</p>
-                                        <div className={styles.line}></div>
-                                    </div>
-                                </div>
-                            </div>
+                                ))}
+                            </Slider>
+
                         </div>
                     </div>
                 </section>

@@ -1,6 +1,6 @@
 import Logo from "../assets/logo.png"
 import Service from "../assets/service.jpg"
-import { FaUserPlus, FaUsers, FaBuffer, FaLaptop, FaBars } from "react-icons/fa";
+import { FaUserPlus, FaUsers, FaBuffer, FaLaptop, FaBars, FaTimes } from "react-icons/fa";
 
 import Banner1 from "../assets/banner.png"
 import { Link, useLocation } from "react-router-dom"
@@ -89,11 +89,11 @@ const Header = () => {
             <header className={`${styles.headerMobile} ${isSticky ? styles.sticky : ""}`}>
                 <div className="container">
                     <div className={styles.navMenu}>
-                       
+
                         <Link to='/'>
-                             <div className={styles.boxMobileLeft}>
-                            <img src={Logo} alt="" />
-                        </div>
+                            <div className={styles.boxMobileLeft}>
+                                <img src={Logo} alt="" />
+                            </div>
                         </Link>
 
                         <div className={styles.boxMobileRight}>
@@ -103,6 +103,11 @@ const Header = () => {
                             <div className={styles.menuMobile}>
 
                                 <ul className={styles.navList}>
+                                    <li className={styles.headerMenu}>
+                                        <img src={Logo} alt="" />
+                                        <label htmlFor="clickCheck"><FaTimes /></label>
+                                    </li>
+                                    <hr />
                                     <li className={isActive('/') ? styles.active : ''}>
                                         <Link to="/">TRANG CHỦ</Link>
                                     </li>

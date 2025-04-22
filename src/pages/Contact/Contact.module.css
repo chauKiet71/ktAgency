@@ -1,13 +1,16 @@
-
 .contactForm {
     width: 100%;
     font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px 10px 10px;
 }
 
-.contactForm .row {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 10px;
+.contactForm h4 {
+    padding-bottom: 10px;
+    font-size: 24px;
+    font-weight: 700;
 }
 
 .contactForm input,
@@ -15,12 +18,23 @@
     width: 100%;
     padding: 10px 20px;
     border: none;
-    background-color: #f5ece5;
     border-radius: 8px;
     margin-bottom: 10px;
     font-size: 16px;
     resize: none;
     box-sizing: border-box;
+    outline: none;
+    border: 1px solid rgb(210, 205, 205);
+}
+
+
+.contactForm input:focus,
+.contactForm textarea:focus,
+.contactForm select:focus {
+    border: 1px solid #66afe9;
+    /* viền xanh nhạt */
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.6);
+    /* ánh sáng mờ */
 }
 
 .contactForm textarea {
@@ -29,38 +43,77 @@
 
 .contactForm .row input {
     width: 50%;
+    outline: 2px solid #00bfff;
 }
 
-.btnSend {
-    text-align: center;
-}
 
 .btnSend button {
     border: none;
     padding: 10px 50px;
-    background-color: aqua;
+    background: linear-gradient(0deg, rgba(46, 226, 230, 1) 0%, rgba(92, 130, 255, 1) 100%, rgba(45, 204, 253, 1) 100%);
     border-radius: 10px;
+    color: #fff;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.btnSend img {
+    width: 50px;
+    height: 30px;
+    /* object-fit: cover; */
+}
+
+.btnSend span {
+    text-transform: uppercase;
+    margin-left: 3px;
 }
 
 .contactForm select {
     width: 100%;
     padding: 10px 20px;
     border: none;
-    background-color: #f5ece5;
+    border: 1px solid rgb(210, 205, 205);
     border-radius: 8px;
     margin-bottom: 10px;
     font-size: 16px;
     box-sizing: border-box;
     appearance: none;
+    outline: none;
+    color: grey;
     /* ẩn mũi tên mặc định nếu muốn tự thiết kế */
 }
 
-.title{
+.titleLienHe {
+    padding: 0px 20px;
+}
+
+.modalTitle {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+
+.modalTitle h4 {
+    margin: 0;
+    font-size: 20px;
+}
+
+
+@media (max-width: 576px) {
+    .btnSend button {
+        font-size: 14px !important;
+    }
+}
+
+.title {
     font-size: 30px;
     font-weight: 700;
     font-weight: bold;
     text-align: center;
-    margin: 20px 0px;
+    margin: 0;
+    margin-top: 30px;
     color: #2f679a;
 }
 
@@ -68,50 +121,128 @@
     display: flex;
     margin-bottom: 20px;
 }
-.boxIcon{
-    background-color: rgb(82, 82, 228);
+
+.boxIcon {
+    background: linear-gradient(45deg, #008cff, #eff0f1);
     padding: 15px;
     border-radius: 10px;
 }
 
-.boxIcon svg{
+.boxIcon svg {
     width: 30px;
     height: 30px;
     color: #fff;
 }
+
 .boxContent {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: 15px;
 }
-.boxContent p{
+
+.boxContent p {
     margin-bottom: 5px;
 }
 
 .socialIcon {
     display: flex;
 }
+
 .icon {
-    background-color: aquamarine;
     margin-right: 20px;
     padding: 10px;
     border-radius: 50%;
     cursor: pointer;
     transition: 0.3s ease;
 }
+
 .icon svg {
     width: 25px;
     height: 25px;
 }
 
-.icon:hover{
-    background-color: #cac5c5;
-    transition:  0.3s ease;
+.icon:hover {
+    background-color: #008cff;
+    transition: 0.3s ease;
 }
 
-.boxSocial h3{
+.boxSocial h3 {
     font-size: 16px;
     font-weight: bold;
 
+}
+
+
+
+.icon {
+    display: block;
+    position: relative;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 1px solid #444;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    z-index: 10;
+    color: #333;
+}
+
+.icon:hover {
+    color: #fff;
+}
+
+.icon:after {
+    position: absolute !important;
+    content: "";
+    width: 100%;
+    height: auto;
+    margin: 5px;
+    display: block;
+    position: relative;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    right: 8px;
+    top: 8px;
+    background-color: #008cff;
+    visibility: hidden;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    opacity: 1\9;
+    visibility: visible\9;
+    display: none\9;
+    -moz-transform: scale(0.5, 0.5);
+    -ms-transform: scale(0.5, 0.5);
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+    z-index: -1;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.icon:hover:after {
+    visibility: visible;
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+    display: block\9;
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+}
+
+@media (max-width: 576px) {
+    .title {
+        margin: 0;
+        margin-top: 30px;
+    }
 }

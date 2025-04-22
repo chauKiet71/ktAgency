@@ -25,10 +25,8 @@ function MyVerticallyCenteredModal(props) {
         </div>
         <form className={styles.contactForm}>
 
-          {/* <div className={styles.row}> */}
           <input type="text" placeholder="Họ tên" />
           <input type="email" placeholder="Email" />
-          {/* </div> */}
           <input type="text" placeholder="Số điện thoại" />
           <select defaultValue="choose">
             <option value="choose">Chọn dịch vụ</option>

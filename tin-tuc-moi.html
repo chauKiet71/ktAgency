@@ -1,11 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
 </head>
+
 <body>
-    <h1>Tin tức</h1>
+    <!-- Desktop Header -->
+    <header class="header ">
+        <div class="container">
+            <div class="menu">
+                <a href="/">
+                    <img src="./logo.png" alt="" />
+                </a>
+                <div class="boxRight">
+                    <ul>
+                        <li><a href="/">TRANG CHỦ</a></li>
+                        <li><a href="/gioi-thieu">GIỚI THIỆU</a></li>
+                        <li class="service">
+                            <a href="#">DỊCH VỤ</a>
+                            <ul class="subMenu">
+                                <li><a href="/quang-cao-facebook">Chạy quảng cáo Facebook</a></li>
+                                <li><a href="/ho-tro-facebook">Hỗ trợ Facebook</a></li>
+                                <li><a href="/landing-page">Thiết kế Landing page</a></li>
+                                <li><a href="/website">Thiết kế Website</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/tin-tuc">TIN TỨC</a></li>
+                        <li><a href="/lien-he">LIÊN HỆ</a></li>
+                    </ul>
+                    <span class="btn">ĐĂNG KÝ TƯ VẤN</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Header -->
+    <header class="headerMobile sticky">
+        <div class="container">
+            <div class="navMenu">
+                <div class="col-6">
+                    <div class="boxMobileLeft">
+                        <img src="./logo.png" alt="" />
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="boxMobileRight">
+                        <input type="checkbox" hidden id="clickCheck" class="menuToggle" />
+                        <label for="clickCheck" class="menuIcon">
+                            <!-- You can replace this with a real icon font or SVG -->
+                            <i class="fa-solid fa-bars"></i>
+                        </label>
+
+                        <div class="menuMobile">
+                            <ul class="navList">
+                                <li class="headerMenu">
+                                    <img src="./logo.png" alt="">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </li>
+                                <li class="active"><a href="/">TRANG CHỦ</a></li>
+                                <li><a href="/gioi-thieu">GIỚI THIỆU</a></li>
+                                <li class="service">
+                                    <a href="#">DỊCH VỤ</a>
+                                    <ul class="subMenu">
+                                        <li><a href="/quang-cao-facebook">Chạy quảng cáo Facebook</a></li>
+                                        <li><a href="/ho-tro-facebook">Hỗ trợ Facebook</a></li>
+                                        <li><a href="/landing-page">Thiết kế Landing page</a></li>
+                                        <li><a href="/website">Thiết kế Website</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/tin-tuc">TIN TỨC</a></li>
+                                <li><a href="/lien-he">LIÊN HỆ</a></li>
+                            </ul>
+                        </div>
+                        <label for="clickCheck" class="overlay"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- content post -->
+    <section>
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-3 mt-4">
+                    <h4 class="titlePostHighlight">Bài viết nổi bật</h4>
+                    <hr>
+                    <div class="boxPostNew">
+                        <div class="boxLeftNews">
+                            <img src="./imagenews/imageNews.jpg" alt="">
+                        </div>
+                        <div class="boxRightNews">
+                            <a href="" class="titlePostNews">Chạy quảng cáo quảng cáo fbChạy quảng cáo fb</a>
+                            <p>30 Tháng 03, 2022</p>
+                        </div>
+                    </div>
+                    <div class="boxPostNew mt-4">
+                        <div class="boxLeftNews">
+                            <img src="./imagenews/imageNews.jpg" alt="">
+                        </div>
+                        <div class="boxRightNews">
+                            <a href="" class="titlePostNews">Chạy quảng cáo quảng cáo Chạuảng cáo Chạuảng cáo Chạy quảng
+                                cáo</a>
+                            <p>30 Tháng 03, 2022</p>
+                        </div>
+                    </div>
+                    <div class="boxPostNew mt-4">
+                        <div class="boxLeftNews">
+                            <img src="./imagenews/imageNews.jpg" alt="">
+                        </div>
+                        <div class="boxRightNews">
+                            <a href="" class="titlePostNews">Chạy quảng cáo quảng cáo fbChạy quảng cáo fb</a>
+                            <p>30 Tháng 03, 2022</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 mt-4">
+                    <main>
+                        <h3>Digital Marketing sẽ lên ngôi năm 2022?</h3>
+                        <p>
+                            Bản chất ngành Marketing đã đem lại nhiều trải nghiệm thú vị dành cho giới trẻ thì ngày nay
+                            GenZ chiếm lĩnh thế giới bán hàng những nền tảng công nghệ Số. Các bạn trẻ GenZ là những
+                            người bắt trends nhanh và thành thạo việc sử dụng các trang mạng xã hội. Đây là ưu điểm lớn
+                            nhất để GenZ chinh phục và làm chủ ngành Digital Marketing này.
+                        </p>
+                        <p>
+                            Trong thế giới Số hiện nay, người làm Digital Marketing đòi hỏi có sự sáng tạo, óc quan sát
+                            và sự nhạy bén với những thay đổi. GenZ có trong mình những tố chất đó và khi ở trong môi
+                            trường tốt, các bạn trẻ có thể phát huy được hết khả năng và đưa ra những ý tưởng mang tính
+                            đột phá, táo bạo.
+                        </p>
+                        <p>
+                            Năm 2022 là năm được dự báo sẽ là thời điểm bùng nổ của GenZ khi các bạn đã có đủ trải
+                            nghiệm, sự giảo dục về Digital Marketing được đẩy mạnh và đặc biệt là nhu cầu nhân sự của
+                            ngành đang ở mức cao.
+                        </p>
+
+                        <h2>II, Digital Marketing sẽ lên ngôi năm 2022?</h2>
+
+                        <p>
+                            Để trả lời cho câu hỏi này, hãy tìm hiểu về top những ngành đang có vị trí quan trọng trong
+                            thị trường tuyển dụng:
+                        </p>
+
+                        <h3>1, Top những ngành có nhu cầu tuyển dụng cao</h3>
+
+                        <p>
+                            Một trong những cách để xác định xem ngành nghề đó có thực sự xã hội cần hay không thì chúng
+                            ta sẽ nhìn vào nhu cầu tuyển dụng qua các năm. 06 ngành dưới đây, bao gồm Digital Marketing
+                            đang được quan tâm nhất:
+                        </p>
+
+                        <h4>a, Các ngành liên quan đến y tế, sức khoẻ</h4>
+                        <p>
+                            Trải qua 2 năm biến động vì đại dịch Covid-19, thế giới đã thấu hiểu và đề cao hơn việc bảo
+                            vệ sức khoẻ cá nhân. Các dịch vụ y tế, khám chữa bệnh được quan tâm đầu tư nhằm đem lại sự
+                            an tâm về sức khoẻ cho con người. Do đó, việc làm và nhân sự ngành y tế được coi trọng và có
+                            nhu cầu tuyển dụng cao hơn.
+                        </p>
+                        <p>
+                            Ngành y tế sẽ trở thành sự lựa chọn ưu tiên của nhiều bạn trẻ khi tìm kiếm ngành học phù hợp
+                            với bản thân trong năm 2022.
+                        </p>
+
+                        <h4>b, Ngành Digital Marketing</h4>
+                        <p>
+                            Theo báo cáo của các trang tin tuyển dụng, Digital Marketing là một ngành được yêu thích bởi
+                            có môi trường năng động, cơ hội việc làm phong phú và thu nhập ổn định. Trung bình nhân sự
+                            Digital Marketing mới ra trường sẽ có mức lương từ 6-8 triệu đối với người chưa có kinh
+                            nghiệm.
+                        </p>
+                        <p>
+                            Nếu đã có kinh nghiệm, có dự án sinh viên thực tế, mức lương các bạn mới ra trường có thể
+                            lên tới 8 con số cũng với ưu đãi hưởng hoa hồng doanh thu của nhiều doanh nghiệp. Vì thế,
+                            thu nhập của ngành Digital Marketing là không giới hạn. Sự năng động và thu nhập hấp dẫn là
+                            những yếu tố chính thu hút các bạn trẻ.
+                        </p>
+
+                        <h4>c, Ngành Công nghệ thông tin</h4>
+                        <p>
+                            Với tốc độ phát triển của thế giới Số, Công nghệ thông tin là ngành không thể thiếu nếu mỗi
+                            quốc gia muốn nắm công nghệ và làm chủ công nghệ. Hầu hết các lĩnh vực của đời sống xã hội
+                            ngày nay đều áp dụng một phần nào đó của Công nghệ để gia tăng trải nghiệm và rút ngắn thời
+                            gian. Công nghệ đem lại sự chính xác và tự động hoá.
+                        </p>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <img src="./logo.png" alt="VNS Logo" class="img-fluid mb-3" />
+                    <p>
+                        VNS cung cấp dịch vụ Thiết kế website trọn gói với giao diện đẹp, độc đáo, sáng tạo là Đơn vị
+                        chuyên tư vấn và triển khai hoạt động Marketing số với nền tảng Google , Facebook mang tính ứng
+                        dụng cao và phù hợp với từng cá nhân, doanh nghiệp.
+                        Tận tâm với khách hàng luôn là trách nhiệm của chúng tôi !
+                    </p>
+                    <p><strong>Địa chỉ:</strong> 42/1 Tân thới nhất 3, Phường Tân Thới Nhất, Quận 12, TP. Hồ Chí Minh
+                    </p>
+                    <p><strong>Số điện thoại:</strong> 032714982</p>
+                    <p><strong>Email:</strong> lck.dev701@gmail.com</p>
+                    <p><strong>Thời gian hoạt động:</strong> 9h00 - 23h59</p>
+                    <p>Copyright &copy; 2025</p>
+                </div>
+
+                <div class="col-12 col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="boxCenter">
+                        <h3>DỊCH VỤ</h3>
+                        <p>Chạy quảng cáo Facebook</p>
+                        <p>Hỗ trợ Facebook</p>
+                        <p>Thiết kế website</p>
+                        <p>Thiết kế landing page</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="boxCenter">
+                        <h3>CHÍNH SÁCH QUI ĐỊNH</h3>
+                        <p>Điều khoản sử dụng</p>
+                        <p>Chính sách bảo mật</p>
+                        <p>Thoả thuận sử dụng dịch vụ</p>
+                        <p>Hỗ trợ khách hàng</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+
 </body>
+<script>
+    window.addEventListener('scroll', function () {
+        const header = document.querySelector('.header');
+        console.log(window.scrollY)
+        if (window.scrollY > 50) {
+            header.classList.add('sticky');
+        } else {
+            header.classList.remove('sticky');
+        }
+    });
+
+    window.addEventListener('scroll', function () {
+        const header = document.querySelector('.headerMobile');
+        console.log(window.scrollY)
+        if (window.scrollY > 50) {
+            header.classList.add('sticky');
+        } else {
+            header.classList.remove('sticky');
+        }
+    });
+
+    let elements = document.querySelectorAll('.titlePostNews');
+
+    elements.forEach(function (element) {
+        let text = element.textContent.trim();
+        if (text.length > 40) {
+            element.textContent = text.substring(0, 40) + '...';
+        }
+    });
+
+
+</script>
+
 </html>

@@ -1,3 +1,21 @@
+/* Áp dụng cho toàn bộ trang */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* nền track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #02d3f7;
+    /* màu tay kéo */
+    border-radius: 4px;
+}
+
+/* Header chính */
 .header {
     position: relative;
     width: 100%;
@@ -6,7 +24,6 @@
     z-index: 999;
 }
 
-/* Khi scroll xuống => sticky + hiệu ứng rơi */
 .sticky {
     position: fixed;
     top: 0;
@@ -16,7 +33,6 @@
     animation: dropDown 0.3s ease forwards;
 }
 
-/* Animation hiệu ứng rơi */
 @keyframes dropDown {
     from {
         transform: translateY(-100%);
@@ -29,7 +45,6 @@
     }
 }
 
-
 .menu {
     display: flex;
     justify-content: space-between;
@@ -38,8 +53,12 @@
 
 .boxRight {
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     align-items: center;
+}
+
+.boxRight span {
+    font-weight: 700;
 }
 
 .boxRight ul {
@@ -53,6 +72,14 @@
     position: relative;
 }
 
+.boxRight ul li a {
+    text-decoration: none;
+    margin-right: 20px;
+    color: #333;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
 .boxRight ul li a:hover {
     color: rgb(60, 150, 247);
     transition: 0.3s;
@@ -60,14 +87,6 @@
 
 .active a {
     color: rgb(60, 150, 247) !important;
-}
-
-.boxRight ul li a {
-    text-decoration: none;
-    margin-right: 20px;
-    color: #333;
-    font-weight: 500;
-    transition: 0.3s;
 }
 
 .boxRight span {
@@ -78,6 +97,7 @@
     cursor: pointer;
 }
 
+/* Submenu Dịch vụ */
 .service {
     position: relative;
 }
@@ -109,13 +129,13 @@
     transition: 0.3s ease;
 }
 
-
 .subMenu li a {
     display: block;
+    color: #333;
+    text-decoration: none;
 }
 
-/* button */
-
+/* Nút đăng ký tư vấn */
 .btn {
     padding: 15px 40px;
     border: none;
@@ -134,17 +154,14 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    /* background-color: #333; */
     left: 0;
     top: 0;
     border-radius: 10px;
 }
 
-/* glow */
 .btn::before {
     content: "";
-    background: linear-gradient(45deg,
-            #008cff, #eff0f1, #008cff, #fff);
+    background: linear-gradient(45deg, #008cff, #eff0f1, #008cff, #fff);
     position: absolute;
     top: -2px;
     left: -2px;
@@ -154,7 +171,7 @@
     height: calc(100% + 4px);
     filter: blur(8px);
     animation: glowing 20s linear infinite;
-    transition: opacity .3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
     border-radius: 10px;
     opacity: 1;
 }
@@ -173,11 +190,13 @@
     }
 }
 
+/* Mobile header */
 .headerMobile {
     display: none;
 }
 
 @media (max-width: 576px) {
+
     .header {
         display: none;
     }
@@ -204,19 +223,6 @@
     .menuIcon {
         z-index: 9999 !important;
     }
-    .headerMenu {
-        position: relative;
-        display: flex;
-        align-items: center;
-    }
-    .headerMenu svg{
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        width: 20px;
-        height: 20px;
-        color: #c6c5c5;
-    }
 
     .menuMobile ul {
         list-style: none;
@@ -231,6 +237,21 @@
         text-decoration: none;
         color: #333;
     }
+
+    .headerMenu {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    .headerMenu i {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 20px;
+        color: #c6c5c5;
+    }
+
 
     .menuToggle:checked+.menuIcon+.menuMobile {
         transform: translateX(0);
@@ -253,9 +274,17 @@
         height: 100vh;
     }
 
+    .menuIcon {
+        display: flex;
+        justify-content: right;
+    }
+
+    .menuIcon i {
+        font-size: 30px;
+    }
+
     .navMenu {
         display: flex;
-        justify-content: space-between;
         align-items: center;
     }
 
@@ -263,9 +292,147 @@
         width: 30px;
         height: 30px;
     }
+
+    .container {
+        max-width: 380px;
+        margin: 0 auto !important;
+    }
+
 }
 
+.container {
+    width: 1200px !important;
+    margin: 0 auto;
+}
 
+/* content bai viet */
 
+.boxPostNew {
+    display: flex;
+    width: 100%;
+}
 
-@media (max-width: 577px) and (min-width: 1024px) {}
+.boxLeftNews {
+    width: 40%;
+}
+
+.boxLeftNews img {
+    width: 100%;
+}
+
+.boxRightNews {
+    width: 56%;
+    margin-left: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: last baseline;
+}
+
+.boxRightNews p {
+    font-size: 14px;
+    margin: 0;
+    margin-top: 5px;
+    color: #787676;
+    font-weight: 500;
+}
+
+.boxRightNews a {
+    text-align: left;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.boxRightNews a:hover {
+    color: #008cff;
+}
+
+.titlePostHighlight {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* footer */
+
+.boxLelf {
+    width: 100%;
+}
+
+.boxLelf p {
+    margin-bottom: 5px;
+}
+
+.boxCenter h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #366e9f;
+}
+
+.boxCenter p {
+    margin-bottom: 5px;
+}
+
+.contactForm {
+    max-width: 500px;
+    font-family: Arial, sans-serif;
+}
+
+.contactForm .row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.contactForm input,
+.contactForm textarea {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    background-color: #f5ece5;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    resize: none;
+    box-sizing: border-box;
+}
+
+.contactForm .row input {
+    width: 50%;
+}
+
+.btnSend {
+    text-align: center;
+}
+
+.btnSend button {
+    border: none;
+    padding: 10px 50px;
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+.contactForm select {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    background-color: #f5ece5;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    appearance: none;
+    /* ẩn mũi tên mặc định nếu muốn tự thiết kế */
+}
+
+.boxSendInfo h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #366e9f;
+}
+
+@media (max-width: 576px) {
+    .header {
+        display: none;
+    }
+}
