@@ -1,2 +1,2 @@
-export default "../../../../public/tin-tuc-moi.html";
+export default "/tin-tuc-moi.html";
 
