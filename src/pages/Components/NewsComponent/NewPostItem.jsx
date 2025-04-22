@@ -1,6 +1,6 @@
 import styles from "./NewsComponent.module.css"
 import { Link } from "react-router-dom"
-import tinTuc from "../../../../tin-tuc-moi.html"
+import tinTuc from "../../../../public/tin-tuc-moi.html"
 const NewPostItem = ({ image, title, date }) => {
     return (
         <>
