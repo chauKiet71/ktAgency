@@ -1,5 +1,7 @@
 import styles from "./NewsComponent.module.css"
 import { Link } from "react-router-dom"
+import linkNews from "./PostNew.js"
+
 const NewPostItem = ({ image, title, date }) => {
     return (
         <>
@@ -8,7 +10,7 @@ const NewPostItem = ({ image, title, date }) => {
                     <img src={image} alt="" />
                 </div>
                 <div className={styles.contentPostNew}>
-                    <a href="/public/tin-tuc-moi.html">{title.length > 50 ? title.slice(0, 50) + '...' : title}</a>
+                    <a href={linkNews}>{title.length > 50 ? title.slice(0, 50) + '...' : title}</a>
                     <p>{date}</p>
                 </div>
             </div>
