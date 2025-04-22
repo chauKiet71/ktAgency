@@ -309,14 +309,9 @@ const LandingPage = () => {
 
                         <div className="row">
                             <div className={styles.btnContact}>
-                                {/* <div className={clsx("col-lg-6", styles.right)}>
-                                    <button>Nhận báo giá chi tiết</button>
-                                </div> */}
                                 <div className={clsx("col-lg-12 text-center")}>
-                                    {/* <button>Gọi tư vấn: 0327142982</button> */}
-
                                     <div className={styles.wrap}>
-                                        <button className={styles.button}>Gọi tư vấn: 0327142982</button>
+                                        <button className={styles.button} onClick={() => setModalShow(true)}>Gọi tư vấn: 0327142982</button>
                                     </div>
                                 </div>
                             </div>

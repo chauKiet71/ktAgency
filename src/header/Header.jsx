@@ -103,7 +103,7 @@ const Header = () => {
                             <div className={styles.menuMobile}>
 
                                 <ul className={styles.navList}>
-                                    <li className={styles.headerMenu}>
+                                    <li className={clsx(styles.headerMenu, "mt-3")}>
                                         <img src={Logo} alt="" />
                                         <label htmlFor="clickCheck"><FaTimes /></label>
                                     </li>

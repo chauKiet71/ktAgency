@@ -29,33 +29,40 @@ const newsList = [
     {
         image: News,
         title: "Content là gì? Cách nhận biết & khác phục vấn đề nội dung mỏng trên website",
-        description: "Khám phá Content là gì? TÌm hiểu định nghĩa, vai trò và cách ứng dụng content hiệu quả trong chiến lượt content  marketing. Tìm hiểu ngay"
+        description: "Khám phá Content là gì? TÌm hiểu định nghĩa, vai trò và cách ứng dụng content hiệu quả trong chiến lượt content  marketing. Tìm hiểu ngay",
+        link: '/tin-tuc-new1'
     },
     {
         image: News,
         title: "Content là gì? Cách nhận biết & khác phục vấn đề nội dung mỏng trên website",
-        description: "Khám phá Content là gì? TÌm hiểu định nghĩa, vai trò và cách ứng dụng content hiệu quả trong chiến lượt content  marketing. Tìm hiểu ngay"
+        description: "Khám phá Content là gì? TÌm hiểu định nghĩa, vai trò và cách ứng dụng content hiệu quả trong chiến lượt content  marketing. Tìm hiểu ngay",
+        link: '/tin-tuc-new1'
     },
     {
         image: News,
         title: "Content là gì? Cách nhận biết & khác phục vấn đề nội dung mỏng trên website",
-        description: "Khám phá Content là gì? TÌm hiểu định nghĩa, vai trò và cách ứng dụng content hiệu quả trong chiến lượt content  marketing. Tìm hiểu ngay"
+        description: "Khám phá Content là gì? TÌm hiểu định nghĩa, vai trò và cách ứng dụng content hiệu quả trong chiến lượt content  marketing. Tìm hiểu ngay",
+        link: '/tin-tuc-new2'
     },
     {
         image: News,
         title: "Content là gì? Cách nhận biết & khác phục vấn đề nội dung mỏng trên website",
-        description: "Khám phá Content là gì? TÌm hiểu định nghĩa, vai trò và cách ứng dụng content hiệu quả trong chiến lượt content  marketing. Tìm hiểu ngay"
+        description: "Khám phá Content là gì? TÌm hiểu định nghĩa, vai trò và cách ứng dụng content hiệu quả trong chiến lượt content  marketing. Tìm hiểu ngay",
+        link: '/tin-tuc-new2'
     },
     {
         image: News,
         title: "Content là gì? Cách nhận biết & khác phục vấn đề nội dung mỏng trên website",
-        description: "Khám phá Content là gì? TÌm hiểu định nghĩa, vai trò và cách ứng dụng content hiệu quả trong chiến lượt content  marketing. Tìm hiểu ngay"
+        description: "Khám phá Content là gì? TÌm hiểu định nghĩa, vai trò và cách ứng dụng content hiệu quả trong chiến lượt content  marketing. Tìm hiểu ngay",
+        link: '/tin-tuc-new2'
     },
     {
         image: News,
         title: "Content là gì? Cách nhận biết & khác phục vấn đề nội dung mỏng trên website",
-        description: "Khám phá Content là gì? TÌm hiểu định nghĩa, vai trò và cách ứng dụng content hiệu quả trong chiến lượt content  marketing. Tìm hiểu ngay"
+        description: "Khám phá Content là gì? TÌm hiểu định nghĩa, vai trò và cách ứng dụng content hiệu quả trong chiến lượt content  marketing. Tìm hiểu ngay",
+        link: '/tin-tuc-new2'
     },
+
 ];
 
 
@@ -113,7 +120,7 @@ const Home = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-12 col-lg-6 mt-4">
-                                <img src={BannerHome1} style={{ width: '100%' }} alt=""  />
+                                <img src={BannerHome1} style={{ width: '100%' }} alt="" />
                             </div>
                             <div className="col-12 col-lg-6 mt-4" >
                                 <div className={styles.contentSection1} >
@@ -426,7 +433,7 @@ const Home = () => {
                                         <div className={styles.boxnews}>
                                             <img src={news.image} alt="" />
                                             <div className={styles.contentNews}>
-                                                <h6>{news.title}</h6>
+                                                <Link to={news.link}>{news.title}</Link>
                                                 <p>{news.description}</p>
                                                 <div className={styles.line}></div>
                                             </div>

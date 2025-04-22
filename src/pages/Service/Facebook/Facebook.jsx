@@ -39,7 +39,7 @@ const Facebook = () => {
                 <div className="container">
                     <h1>Dịch vụ hỗ trợ <br /> Chuyên sâu hàng đầu Việt Nam</h1>
                     <div className="row mt-4">
-                        <div className="col-lg-4">
+                        <div className="col-lg-4 mt-4">
                             <div className={styles.contentSection2}>
                                 <div className={styles.contentTitle}>
                                     <div className={styles.boxIcon}>
@@ -54,7 +54,7 @@ const Facebook = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4">
+                        <div className="col-lg-4 mt-4">
                             <div className={styles.contentSection2}>
                                 <div className={styles.contentTitle}>
                                     <div className={styles.boxIcon}>
@@ -69,7 +69,7 @@ const Facebook = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4">
+                        <div className="col-lg-4 mt-4">
                             <div className={styles.contentSection2}>
                                 <div className={styles.contentTitle}>
                                     <div className={styles.boxIcon}>
@@ -86,8 +86,8 @@ const Facebook = () => {
                         </div>
                     </div>
 
-                    <div className="row mt-4">
-                        <div className="col-lg-4">
+                    <div className="row">
+                        <div className="col-lg-4 mt-4">
                             <div className={styles.contentSection2}>
                                 <div className={styles.contentTitle}>
                                     <div className={styles.boxIcon}>
@@ -102,7 +102,7 @@ const Facebook = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4">
+                        <div className="col-lg-4 mt-4">
                             <div className={styles.contentSection2}>
                                 <div className={styles.contentTitle}>
                                     <div className={styles.boxIcon}>
@@ -117,7 +117,7 @@ const Facebook = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4">
+                        <div className="col-lg-4 mt-4">
                             <div className={styles.contentSection2}>
                                 <div className={styles.contentTitle}>
                                     <div className={styles.boxIcon}>
@@ -150,7 +150,7 @@ const Facebook = () => {
                     <h1>Tại sao lại chọn dịch vụ facebook của chúng tôi</h1>
                     <p>Với trên 5 năm làm việc trong lĩnh vực Dịch Vụ Facebook được tin dùng bởi hơn 20,000 khách hàng, chúng tôi không ngừng thay đổi nhằm đáp ứng nhu cầu ngày càng cao của khách hàng sử dụng nên tảng Facebook.</p>
                     <div className="row mt-4">
-                        <div className="col-lg-4">
+                        <div className="col-lg-4 mt-4">
                             <div className={styles.contentSection3}>
                                 <div className="text-center">
                                     <img src={iconfb1} alt="" />
@@ -159,7 +159,7 @@ const Facebook = () => {
                                 <p>Đội ngũ am hiểu về Digital Marketing và Dịch Vụ Facebook chuyên sâu, tư vấn tận tâm hỗ trợ 24/24.</p>
                             </div>
                         </div>
-                        <div className="col-lg-4">
+                        <div className="col-lg-4 mt-4">
                             <div className={styles.contentSection3}>
                                 <div className="text-center">
                                     <img src={iconfb2} alt="" />
@@ -168,7 +168,7 @@ const Facebook = () => {
                                 <p>Thông tin quý khách hàng và doanh nghiệp cung cấp được chúng tôi giữ bí mật và bảo mật tuyệt đối​.</p>
                             </div>
                         </div>
-                        <div className="col-lg-4">
+                        <div className="col-lg-4 mt-4">
                             <div className={styles.contentSection3}>
                                 <div className="text-center">
                                     <img src={iconfb3} alt="" />

@@ -32,12 +32,14 @@ const News = () => {
             'image': ImageNews,
             'title': 'Quảng cáo Facebook như thế nào là hiệu quả',
             'date': '05 Tháng 01, 2024',
+            'links': '/tin-tuc-new1'
         },
         {
             'id': 2,
             'image': ImageNews,
             'title': 'Quảng cáo Facebook như thế nào là hiệu quả',
             'date': '05 Tháng 01, 2024',
+            'links': '/tin-tuc-new2'
         },
     ]
 
