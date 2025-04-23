@@ -12,8 +12,8 @@ import ScrollToTop from "./pages/Components/ScrollToTop/ScrollToTop"
 import Website from './pages/Service/Website/Website';
 import Abouts from './pages/Abouts/Abouts';
 import Facebook from './pages/Service/Facebook/Facebook';
-// import New1 from './pages/News/New1/New1';
-// import New2 from './pages/News/New2/New2';
+import New1 from './pages/News/New1/New1';
+import New2 from './pages/News/New2/New2';
 
 function App() {
   return (
@@ -39,8 +39,8 @@ function App() {
             <Route path='/website' element={<Website />} />
             <Route path='/tin-tuc' element={<News />}>
             </Route>
-            {/* <Route path='tin-tuc-new1' element={<New1 />}></Route>
-            <Route path='tin-tuc-new2' element={<New2 />}></Route> */}
+            <Route path='tin-tuc-new1' element={<New1 />}></Route>
+            <Route path='tin-tuc-new2' element={<New2 />}></Route>
             <Route path='/lien-he' element={<Contact />}></Route>
           </Routes>
         </BrowserRouter>
