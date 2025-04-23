@@ -1,8 +1,8 @@
-import Header from "../../../header/Header"
-import Footer from "../../../footer/Footer"
-import ImageNews from "../../../assets/imageNews.jpg"
-import styles from "../../News/News.module.css"
-import NewsPostItem from "../../Components/NewsComponent/NewPostItem"
+import Header from "../../header/Header"
+import Footer from "../../footer/Footer"
+import ImageNews from "../../assets/imageNews.jpg"
+import styles from "../News/News.module.css"
+import NewsPostItem from "../Components/NewsComponent/NewPostItem"
 
 const listNewsPost = [
     {
@@ -22,7 +22,7 @@ const listNewsPost = [
 ]
 
 
-const New1 = () => {
+const New2 = () => {
     return (
         <>
 
@@ -32,7 +32,7 @@ const New1 = () => {
                 <div className="row">
                     <div className="col-lg-8 mt-4">
                         <main>
-                            <h3>Digital Marketing sẽ lên ngôi năm 2022?</h3>
+                            <h3>Digital Marketing sẽ lên ngôi năm 2025?</h3>
                             <p>
                                 Bản chất ngành Marketing đã đem lại nhiều trải nghiệm thú vị dành cho giới trẻ thì ngày nay
                                 GenZ chiếm lĩnh thế giới bán hàng những nền tảng công nghệ Số. Các bạn trẻ GenZ là những
@@ -117,4 +117,4 @@ const New1 = () => {
         </>
     )
 }
-export default New1
+export default New2
