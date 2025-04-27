@@ -1,7 +1,7 @@
 import styles from "./NewsComponent.module.css"
 import { Link } from "react-router-dom"
 
-const NewPostItem = ({ image, title, date, links }) => {
+const NewPostItem = ({ image, title, links, views }) => {
     return (
         <>
             <div className={styles.boxPostNew}>
@@ -9,9 +9,9 @@ const NewPostItem = ({ image, title, date, links }) => {
                     <img src={image} alt="" />
                 </div>
                 <div className={styles.contentPostNew}>
-                    <Link to={links}>{title.length > 50 ? title.slice(0, 50) + '...' : title}</Link>
+                    <Link to={views} className={styles.ttNews}>{title.length > 50 ? title.slice(0, 50) + '...' : title}</Link>
 
-                    <p>{date}</p>
+                    <Link to={views} className={styles.action}>XEM NGAY</Link>
                 </div>
             </div>
         </>

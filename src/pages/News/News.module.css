@@ -12,8 +12,36 @@
     font-weight: 700;
     text-transform: uppercase;
 }
+
 .line {
     width: 100px;
     border-bottom: 3px solid #2f679a;
     margin: 5px 0px 10px 0px;
+}
+
+.titleNewsPost {
+    color: #2a2a2a;
+    font-size: 1.875rem;
+    line-height: 2.375rem;
+    margin-bottom: 1.25rem;
+    font-weight: 700;
+}
+
+.des{
+    color: #404040;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.625rem;
+    margin: 1.25rem 0;
+}
+
+.mains h3{
+    font-weight: 600;
+}
+.tienich ul {
+    padding-top: 10px;
+}
+
+.tienich ul li{
+    padding: 5px 0px;
 }

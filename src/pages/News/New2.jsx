@@ -3,24 +3,40 @@ import Footer from "../../footer/Footer"
 import ImageNews from "../../assets/imageNews.jpg"
 import styles from "../News/News.module.css"
 import NewsPostItem from "../Components/NewsComponent/NewPostItem"
+import anh1 from "../../assets/news2/anh1.png"
+import anh2 from "../../assets/news2/anh2.png"
+import anh3 from "../../assets/news2/anh3.png"
 
 const listNewsPost = [
     {
         'id': 1,
         'image': ImageNews,
         'title': 'Quảng cáo Facebook như thế nào là hiệu quả',
-        'date': '05 Tháng 01, 2024',
+        'views': '/quang-cao-facebook',
         'links': '/tin-tuc-new1'
     },
     {
         'id': 2,
         'image': ImageNews,
-        'title': 'Quảng cáo Facebook như thế nào là hiệu quả',
-        'date': '05 Tháng 01, 2024',
-        'links': '/tin-tuc-new1'
+        'title': 'Hỗ trợ Facebook',
+        'views': '/ho-tro-facebook',
+        'links': '/tin-tuc-new2'
+    },
+    {
+        'id': 3,
+        'image': ImageNews,
+        'title': 'Thiết kế landing page',
+        'views': '/landing-page',
+        'links': '/tin-tuc-new2'
+    },
+    {
+        'id': 4,
+        'image': ImageNews,
+        'title': 'Thiết kế website',
+        'views': '/website',
+        'links': '/tin-tuc-new2'
     },
 ]
-
 
 const New2 = () => {
     return (
@@ -31,74 +47,85 @@ const New2 = () => {
             <div className="container mb-5">
                 <div className="row">
                     <div className="col-lg-8 mt-4">
-                        <main>
-                            <h3>Digital Marketing sẽ lên ngôi năm 2025?</h3>
-                            <p>
-                                Bản chất ngành Marketing đã đem lại nhiều trải nghiệm thú vị dành cho giới trẻ thì ngày nay
-                                GenZ chiếm lĩnh thế giới bán hàng những nền tảng công nghệ Số. Các bạn trẻ GenZ là những
-                                người bắt trends nhanh và thành thạo việc sử dụng các trang mạng xã hội. Đây là ưu điểm lớn
-                                nhất để GenZ chinh phục và làm chủ ngành Digital Marketing này.
+                        <main className={styles.mains}>
+                            <h1 className={styles.titleNewsPost}>Cách nuôi Acc Facebook Ads để chạy quảng cáo</h1>
+                            <p className={styles.des}>
+                                Cách tạo tài khoản cá nhân, tài khoản quảng cáo dễ được trả sau + khả năng sống cao. <br />Dù không biết là bao giờ fix hoàn toàn nhưng nếu ít 1-2 cái thì chắc vẫn còn cửa, hi vọng mọi người tranh thủ làm thêm vài cái mà dự phòng.
                             </p>
-                            <p>
-                                Trong thế giới Số hiện nay, người làm Digital Marketing đòi hỏi có sự sáng tạo, óc quan sát
-                                và sự nhạy bén với những thay đổi. GenZ có trong mình những tố chất đó và khi ở trong môi
-                                trường tốt, các bạn trẻ có thể phát huy được hết khả năng và đưa ra những ý tưởng mang tính
-                                đột phá, táo bạo.
-                            </p>
-                            <p>
-                                Năm 2022 là năm được dự báo sẽ là thời điểm bùng nổ của GenZ khi các bạn đã có đủ trải
-                                nghiệm, sự giảo dục về Digital Marketing được đẩy mạnh và đặc biệt là nhu cầu nhân sự của
-                                ngành đang ở mức cao.
+                            <p>Thao tác chủ yếu trên điện thoại và đường mạng, thiết bị đăng nhập, thẻ visa khác hoàn toàn không nên chung với hệ thống cũ.
+
+                                <ul>
+                                    <li>
+                                        Mỗi bước cần chắc chắn thời gian thì nên để thời gian nuôi 1-2 ngày.
+                                    </li>
+                                    <li>
+                                        Nếu bị khoá sau khi tạo thì phải ngưng cách ngày ra mới thực hiện tiếp.
+                                    </li>
+                                    <li>
+                                        Nội dung – trang – hình ảnh sử dụng cho quảng cáo phải mới hoàn toàn chưa từng được đăng tải ở đâu.
+                                    </li>
+                                </ul>
                             </p>
 
-                            <h2>II, Digital Marketing sẽ lên ngôi năm 2022?</h2>
+                            <h4>1. Lập tài khoản cá nhân</h4>
 
                             <p>
-                                Để trả lời cho câu hỏi này, hãy tìm hiểu về top những ngành đang có vị trí quan trọng trong
-                                thị trường tuyển dụng:
+                                Đăng kí bằng điện thoại, cái này đơn giản rồi. Nhớ tải một app khác Facebook, có thể là trình duyệt Opera, Cốc Cốc … đăng kí từ đó. Cẩn thận có thể dùng một chiếc điện thoại mới.
+                            </p>
+                            <p>
+                                Nhớ có sim điện thoại xác thực đi kèm. Vào trong cài đặt thêm Email đăng nhập, lưu ý sử dụng email mới chưa từng đăng kí sử dụng với Facebook.
+                            </p>
+                            <p>Đăng kí xong điền thông tin của mình nhưng khác thông tin mà mình đã khai báo trên tài khoản Facebook khác trước đây:</p>
+                            <p>Ví dụ bạn sống ở HN, vẫn ghi là HN nhưng không ghi tới từ Quảng Ninh mà chuyển sang Hải Phòng. Sau đó các trường cấp 3, trường cấp 2 cũng liên quan như thế. Tuyệt đối không chọn trường cấp 3 có ở Đà Nẵng hay Hồ Chí Minh.</p>
+                            <p>Đăng các ảnh tự chụp bằng di động lên tài khoản cá nhân. Kết bạn với ai đó không phải là bạn.</p>
+                            <p>Tài khoản này có thể để tên bạn nhưng sử dụng giấy tờ xác thực khác với giấy tờ bạn từng dùng ở các tài khoản khác. Tên có thể đảo, bỏ dấu ví dụ: Tài khoản gốc là Trần Công Thành  tài khoản mới có thể là Tran Thanh Cong, Cong Thanh Tran, Công Thành Trấn …</p>
+                            <p>* Tuyệt đối quan trọng: không đăng lại nội dung nhất là hình ảnh đã được đăng tải ở trên tài khoản cũ, để nội dung các tài khoản giống nhau y hệt.</p>
+                            <h4>2. Thêm thẻ</h4>
+
+                            <p>
+                                Nếu sử dụng app Facebook bạn có thể thêm thẻ trực tiếp tại phần Cài đặt, Thanh toán trong app.
                             </p>
 
-                            <h3>1, Top những ngành có nhu cầu tuyển dụng cao</h3>
+                            <img src={anh1} alt="" style={{ width: '100%' }} />
+                            <p>
+                                Nếu sử dụng các trình duyệt thì cần làm một bước trung gian đó là đăng nhập tài khoản trên ở máy tính, nhớ tạo profile Chrome, cốc cốc mới hoặc trình duyệt web khác để tránh trùng lịch sử đăng nhập.
+                            </p>
+                            <img src={anh2} alt="" style={{ width: '100%' }} />
+                            <p>Chờ tiếp qua ngày để tài khoản ốn định.</p>
+                            <h4>3. Tạo cam</h4>
+                            <p>
+                                Bắt đầu từ bước này lưu ý quan trọng là thực hiện tất cả bằng điện thoại.
+                            </p>
+                            <p>
+                                Tìm 1 trang để tạo quàng cáo, trang này phải uy tín chưa từng có lịch sử bị khoá tài khoản hoặc từ chối quảng cáo. Chia sẻ quyền biên tập viên với tài khoản Facebook mới.
+                            </p>
+                            <p>
+                                Sau đó thì đăng một bài viết mới từ chính tài khoản Facebook. Nội dung dạng text không cần phải chau chuốt. Có thể viết dạng đơn giản kiểu:
+                                <ul>
+                                    <li>
+                                        Ngày mai Hà Nội thời tiết rất đẹp.
+                                    </li>
+                                    <li>
+                                        Tôi yêu Hà Nội.
+                                    </li>
+                                </ul>
+                            </p>
+                            <p>Tuyệt đổi không trực tiếp quảng cáo sản phẩm/ dịch vụ của mình trong chiến dịch đầu tiên nhất là các sản phẩm sức khoẻ làm đẹp. Nội dung của quảng cáo đàu tiên hãy nghĩ thật đơn giản, tích cực, không cần dài dòng làm gì.</p>
+                            <p>Dùng điện thoại Boot Post bài viết trên:
 
-                            <p>
-                                Một trong những cách để xác định xem ngành nghề đó có thực sự xã hội cần hay không thì chúng
-                                ta sẽ nhìn vào nhu cầu tuyển dụng qua các năm. 06 ngành dưới đây, bao gồm Digital Marketing
-                                đang được quan tâm nhất:
+                                <ul>
+                                    <li>
+                                        Ngân sách ngẫu nhiên 23,35, 45, 101 k … với thời gian 1-3 ngày
+                                    </li>
+                                    <li>
+                                        Đối tượng chỉnh lại độ tuổi nhỏ hơn ngẫu nhiên thay mặc định 18-65 thành 18-35. 20-44….
+                                    </li>
+                                </ul>
                             </p>
+                            <p>Nếu có yêu cầu thêm thẻ thì thêm thẻ một lần nữa.</p>
+                            <img src={anh3} alt="" style={{ width: '100%' }} />
+                            <p>Để cho ads đó tiêu hết ngưỡng thanh toán đầu tiên (43:69k … ) thì ta tiếp tục tạo chiến dịch thứ 2 ờ trên các trang bán sản phẩm. Nếu bạn muốn chắc ăn có thể để tài khoản qua ngưỡng 220k, có thể tiêu 1 triệu mới phải thanh toán hẵng tạo quàng cáo bán sản phẩm dịch vụ.</p>
 
-                            <h4>a, Các ngành liên quan đến y tế, sức khoẻ</h4>
-                            <p>
-                                Trải qua 2 năm biến động vì đại dịch Covid-19, thế giới đã thấu hiểu và đề cao hơn việc bảo
-                                vệ sức khoẻ cá nhân. Các dịch vụ y tế, khám chữa bệnh được quan tâm đầu tư nhằm đem lại sự
-                                an tâm về sức khoẻ cho con người. Do đó, việc làm và nhân sự ngành y tế được coi trọng và có
-                                nhu cầu tuyển dụng cao hơn.
-                            </p>
-                            <p>
-                                Ngành y tế sẽ trở thành sự lựa chọn ưu tiên của nhiều bạn trẻ khi tìm kiếm ngành học phù hợp
-                                với bản thân trong năm 2022.
-                            </p>
-
-                            <h4>b, Ngành Digital Marketing</h4>
-                            <p>
-                                Theo báo cáo của các trang tin tuyển dụng, Digital Marketing là một ngành được yêu thích bởi
-                                có môi trường năng động, cơ hội việc làm phong phú và thu nhập ổn định. Trung bình nhân sự
-                                Digital Marketing mới ra trường sẽ có mức lương từ 6-8 triệu đối với người chưa có kinh
-                                nghiệm.
-                            </p>
-                            <p>
-                                Nếu đã có kinh nghiệm, có dự án sinh viên thực tế, mức lương các bạn mới ra trường có thể
-                                lên tới 8 con số cũng với ưu đãi hưởng hoa hồng doanh thu của nhiều doanh nghiệp. Vì thế,
-                                thu nhập của ngành Digital Marketing là không giới hạn. Sự năng động và thu nhập hấp dẫn là
-                                những yếu tố chính thu hút các bạn trẻ.
-                            </p>
-
-                            <h4>c, Ngành Công nghệ thông tin</h4>
-                            <p>
-                                Với tốc độ phát triển của thế giới Số, Công nghệ thông tin là ngành không thể thiếu nếu mỗi
-                                quốc gia muốn nắm công nghệ và làm chủ công nghệ. Hầu hết các lĩnh vực của đời sống xã hội
-                                ngày nay đều áp dụng một phần nào đó của Công nghệ để gia tăng trải nghiệm và rút ngắn thời
-                                gian. Công nghệ đem lại sự chính xác và tự động hoá.
-                            </p>
                         </main>
                     </div>
                     <div className="col-lg-4 mt-4">

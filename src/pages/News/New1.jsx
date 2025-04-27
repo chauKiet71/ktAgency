@@ -3,21 +3,39 @@ import Footer from "../../footer/Footer"
 import ImageNews from "../../assets/imageNews.jpg"
 import styles from "../News/News.module.css"
 import NewsPostItem from "../Components/NewsComponent/NewPostItem"
+import bgNews1 from "../../assets/news1/bgnew1.jpg"
+import anh1 from "../../assets/news1/anh1.jpg"
+import anh2 from "../../assets/news1/anh2.jpg"
+import anh3 from "../../assets/news1/anh3.jpg"
 
 const listNewsPost = [
     {
         'id': 1,
         'image': ImageNews,
         'title': 'Quảng cáo Facebook như thế nào là hiệu quả',
-        'date': '05 Tháng 01, 2024',
+        'views': '/quang-cao-facebook',
         'links': '/tin-tuc-new1'
     },
     {
         'id': 2,
         'image': ImageNews,
-        'title': 'Quảng cáo Facebook như thế nào là hiệu quả',
-        'date': '05 Tháng 01, 2024',
-        'links': '/tin-tuc-new1'
+        'title': 'Hỗ trợ Facebook',
+        'views': '/ho-tro-facebook',
+        'links': '/tin-tuc-new2'
+    },
+    {
+        'id': 3,
+        'image': ImageNews,
+        'title': 'Thiết kế landing page',
+        'views': '/landing-page',
+        'links': '/tin-tuc-new2'
+    },
+    {
+        'id': 4,
+        'image': ImageNews,
+        'title': 'Thiết kế website',
+        'views': '/website',
+        'links': '/tin-tuc-new2'
     },
 ]
 
@@ -31,78 +49,77 @@ const New1 = () => {
             <div className="container mb-5">
                 <div className="row">
                     <div className="col-lg-8 mt-4">
-                        <main>
-                            <h3>Digital Marketing sẽ lên ngôi năm 2022?</h3>
-                            <p>
-                                Bản chất ngành Marketing đã đem lại nhiều trải nghiệm thú vị dành cho giới trẻ thì ngày nay
-                                GenZ chiếm lĩnh thế giới bán hàng những nền tảng công nghệ Số. Các bạn trẻ GenZ là những
-                                người bắt trends nhanh và thành thạo việc sử dụng các trang mạng xã hội. Đây là ưu điểm lớn
-                                nhất để GenZ chinh phục và làm chủ ngành Digital Marketing này.
+                        <main className={styles.mains}>
+                            <h1 className={styles.titleNewsPost}>Top 3 Tool Copy chiến dịch quảng cáo Facebook của đối thủ tốt nhất</h1>
+                            <p className={styles.des}>
+                                Bất kỳ ai muốn kinh doanh Online đều ít nhất một lần chạy quảng cáo. Tuy nhiên có người chạy cùng một loại quảng cáo hơn lại không ra đơn được, trong khi đối thủ thì ngày nào cũng bán được hàng. Có thể là giá họ tốt hơn hoặc chiến dịch quảng cáo của họ xác định đúng đối tượng. Vậy làm sao để copy chiến dịch quảng cáo Facebook của đối thủ tốt nhất. Trong bài này mình sẽ giới thiệu đến các bạn 3 Tool giúp copy chiến dịch quảng cáo cực kỳ hiệu quả giúp tăng khả năng ra đơn đến 70%.
                             </p>
+                            <h4>Tool spy ads của AhaChat giúp sao chép chiến dịch quảng cáo Facebook tốt nhất</h4>
                             <p>
-                                Trong thế giới Số hiện nay, người làm Digital Marketing đòi hỏi có sự sáng tạo, óc quan sát
-                                và sự nhạy bén với những thay đổi. GenZ có trong mình những tố chất đó và khi ở trong môi
-                                trường tốt, các bạn trẻ có thể phát huy được hết khả năng và đưa ra những ý tưởng mang tính
-                                đột phá, táo bạo.
-                            </p>
-                            <p>
-                                Năm 2022 là năm được dự báo sẽ là thời điểm bùng nổ của GenZ khi các bạn đã có đủ trải
-                                nghiệm, sự giảo dục về Digital Marketing được đẩy mạnh và đặc biệt là nhu cầu nhân sự của
-                                ngành đang ở mức cao.
+                                Chắc hẵn dân bán hàng Online ai cũng biết đến spy ads của AhaChat có thể nói đây là Tool copy chiến dịch quảng cáo Facebook tốt nhất hiện nay, với tính năng sao chép toàn bộ chiến dịch quảng cáo của đối thủ kết hợp với chiến dịch bạn đang chạy, thì khả năng ra đơn sẽ cao hơn rất nhiều.
                             </p>
 
-                            <h2>II, Digital Marketing sẽ lên ngôi năm 2022?</h2>
+                            <p>
+                                Theo thống kê từ dân Marketing thì có đến 90% người dùng chạy Ads đều sử dụng spy ads để phân tích đối thủ, các shop cạnh tranh để từ đó có hướng chạy Ads hiệu quả hơn.
+                            </p>
+                            <p>
+                                Các tính năng nổi bật của spy ads mà các tool copy chiến dịch quảng cáo Facebook không có đó là:
+                                <ul>
+                                    <li>Tìm kiếm các bài viết đang chạy quảng cáo trên Facebook</li>
+                                    <li>Thống kê số lượng tương tác và bình luận của các bài viết quảng cáo</li>
+                                    <li>Xem được bài nào đang được chạy quảng cáo</li>
+                                    <li>Tìm và tải tất cả bình luận của bài viết đang chạy quảng cáo (lọc theo từ khóa, sđt hoặc email), thường được sử dụng để lấy thông tin khách hàng của đối thủ</li>
+                                </ul>
+                            </p>
+                            <img src={anh1} alt="" style={{ width: '100%' }} />
+
+                            <h4>SocioGraph.io phân tích Ads đối thủ</h4>
+                            <div className="text-center" style={{ width: '100%' }}>
+                                <img src={anh2} alt="" style={{ width: '100%' }} />
+                            </div>
+                            <p>
+                                SocioGraph.io là Website giúp bạn  phân tích những bài viết đang chạy quảng cáo trên Facebook với những nội dung sau:
+                                <ul>
+                                    <li>
+                                        Tìm thời gian đăng bài quảng cáo hiệu quả nhất.
+                                    </li>
+                                    <li>Kiểm tra nội dung mà đối thủ đăng bài hàng ngày</li>
+                                    <li>Cách đối thủ dùng Fanpage để chạy quảng cáo như thế nào</li>
+                                    <li>
+                                        Đếm số lượng tương tác bài viết của đối thủ và phân tích tâm lý khách hàng qua bình luận dưới bài quảng cáo.
+                                    </li>
+                                </ul>
+                            </p>
+                            <h4>Dùng tính năng “Thư viện Quảng cáo” của Facebook</h4>
+                            <p>Thư viện quảng cáo trước đây được gọi là “Info and Ads” Tools, tuy nhiên tính năng này đã được đổi sang tên mới được hơn 1 năm nay. Facebook cho phép người dùng sử dụng công này nhằm tăng tính minh bạch cho các chủ sở hữu Fanapge.</p>
+                            <div className="text-center" style={{ width: '100%' }}>
+                                <img src={anh3} alt="" style={{ width: '100%' }} />
+                            </div>
 
                             <p>
-                                Để trả lời cho câu hỏi này, hãy tìm hiểu về top những ngành đang có vị trí quan trọng trong
-                                thị trường tuyển dụng:
+                                Mặc dù mục đích thật sự của “Thư viện Quảng cáo”  là để người dùng có thể kiểm tra xem một Fanpage đang chạy Quảng cáo nội dung gì, đang chạy từ các thương hiệu nào, nhưng chính tính năng này lại được tận dung để phân tích chiến dịch chạy quảng cáo của đối thủ.
                             </p>
+                            <p>
+                                Nếu bạn muốn biết đối thủ bán hàng của mình đang chạy Ads gì, chỉ với một cú click, bạn sẽ có thông tin về chiến dịch quảng cáo của đối thủ hiện đang hoạt động như thế nào.
+                            </p>
+                            <p>
+                                <strong>Ưu điểm:</strong>
+                                <ul>
+                                    <li>
+                                        Do công cụ này miễn phí nên đối thủ của bạn cũng có thể dùng cách giống bạn để copy chiến dịch quảng cáo Facebook.
+                                    </li>
+                                    <li>
+                                        Không có tính năng phân tích lượt like, comment và lượt share của 1 bài viết cụ thể.
+                                    </li>
+                                    <li>Không lấy được bình luận ẩn</li>
+                                </ul>
+                            </p>
+                            <p>Nếu bạn xác định bước vào con đường kinh doanh Online, bạn cần phải biết người biết ta, trăm trận trăm thắng. Do đó việc phân tích Ads để copy chiến dịch quảng cáo Facebook của đối thủ là việt nên làm. Hiện mình vẫn dùng spy ads của AhaChat vì nó tổng hợp được tất cả tính năng của các công cụ khác, giúp bạn tiết kiệm được rất nhiều thời gian và tăng hiệu quả ra đơn.</p>
 
-                            <h3>1, Top những ngành có nhu cầu tuyển dụng cao</h3>
-
-                            <p>
-                                Một trong những cách để xác định xem ngành nghề đó có thực sự xã hội cần hay không thì chúng
-                                ta sẽ nhìn vào nhu cầu tuyển dụng qua các năm. 06 ngành dưới đây, bao gồm Digital Marketing
-                                đang được quan tâm nhất:
-                            </p>
-
-                            <h4>a, Các ngành liên quan đến y tế, sức khoẻ</h4>
-                            <p>
-                                Trải qua 2 năm biến động vì đại dịch Covid-19, thế giới đã thấu hiểu và đề cao hơn việc bảo
-                                vệ sức khoẻ cá nhân. Các dịch vụ y tế, khám chữa bệnh được quan tâm đầu tư nhằm đem lại sự
-                                an tâm về sức khoẻ cho con người. Do đó, việc làm và nhân sự ngành y tế được coi trọng và có
-                                nhu cầu tuyển dụng cao hơn.
-                            </p>
-                            <p>
-                                Ngành y tế sẽ trở thành sự lựa chọn ưu tiên của nhiều bạn trẻ khi tìm kiếm ngành học phù hợp
-                                với bản thân trong năm 2022.
-                            </p>
-
-                            <h4>b, Ngành Digital Marketing</h4>
-                            <p>
-                                Theo báo cáo của các trang tin tuyển dụng, Digital Marketing là một ngành được yêu thích bởi
-                                có môi trường năng động, cơ hội việc làm phong phú và thu nhập ổn định. Trung bình nhân sự
-                                Digital Marketing mới ra trường sẽ có mức lương từ 6-8 triệu đối với người chưa có kinh
-                                nghiệm.
-                            </p>
-                            <p>
-                                Nếu đã có kinh nghiệm, có dự án sinh viên thực tế, mức lương các bạn mới ra trường có thể
-                                lên tới 8 con số cũng với ưu đãi hưởng hoa hồng doanh thu của nhiều doanh nghiệp. Vì thế,
-                                thu nhập của ngành Digital Marketing là không giới hạn. Sự năng động và thu nhập hấp dẫn là
-                                những yếu tố chính thu hút các bạn trẻ.
-                            </p>
-
-                            <h4>c, Ngành Công nghệ thông tin</h4>
-                            <p>
-                                Với tốc độ phát triển của thế giới Số, Công nghệ thông tin là ngành không thể thiếu nếu mỗi
-                                quốc gia muốn nắm công nghệ và làm chủ công nghệ. Hầu hết các lĩnh vực của đời sống xã hội
-                                ngày nay đều áp dụng một phần nào đó của Công nghệ để gia tăng trải nghiệm và rút ngắn thời
-                                gian. Công nghệ đem lại sự chính xác và tự động hoá.
-                            </p>
                         </main>
                     </div>
-                    <div className="col-lg-4 mt-4">
-                        <span className={styles.titlePostHighlight}>Bài viết nổi bật</span>
+                    <div className="col-lg-4 mt-4" style={{ position: 'sticky', top: '100px' }}>
+                        <span className={styles.titlePostHighlight}>dịch vụ</span>
                         <div className={styles.line}></div>
                         {
                             listNewsPost.map(item => (
@@ -110,6 +127,7 @@ const New1 = () => {
                             ))
                         }
                     </div>
+
                 </div>
             </div>
 

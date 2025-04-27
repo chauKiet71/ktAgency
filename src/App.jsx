@@ -14,6 +14,10 @@ import Abouts from './pages/Abouts/Abouts';
 import Facebook from './pages/Service/Facebook/Facebook';
 import New1 from './pages/News/New1';
 import New2 from './pages/News/New2';
+import New3 from './pages/News/New3';
+import New4 from './pages/News/New4';
+import New5 from './pages/News/New5';
+import New6 from './pages/News/New6';
 
 function App() {
   return (
@@ -39,8 +43,12 @@ function App() {
             <Route path='/website' element={<Website />} />
             <Route path='/tin-tuc' element={<News />}>
             </Route>
-            <Route path='tin-tuc-new1' element={<New1 />}></Route>
-            <Route path='tin-tuc-new2' element={<New2 />}></Route>
+            <Route path='top-3-tool-copy-chien-dich-quang-cao-facebook-cua-doi-thu-tot-nhat' element={<New1 />}></Route>
+            <Route path='cach-nuoi-acc-facebook-ads-de-chay-quang-cao' element={<New2 />}></Route>
+            <Route path='tim-hieu-dark-web-tu-co-ban-den-nang-cao' element={<New3 />}></Route>
+            <Route path='top-5-shop-ban-do-gia-dung-cho-mua-he-tren-shopee-gia-re-uy-tin-chat-luong' element={<New4 />}></Route>
+            <Route path='mot-so-cach-hacker-tan-cong-de-chiem-quyen-tai-khoan' element={<New5 />}></Route>
+            <Route path='huong-dan-tu-lap-trinh-bang-blackbox-ai' element={<New6 />}></Route>
             <Route path='/lien-he' element={<Contact />}></Route>
           </Routes>
         </BrowserRouter>

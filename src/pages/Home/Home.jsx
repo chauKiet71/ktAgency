@@ -1,5 +1,15 @@
 import Service from "../../assets/service.jpg"
+import service1 from "../../assets/servicewebsite.jpg"
+import service2 from "../../assets/servicelanding.jpg"
+import service3 from "../../assets/servicefbads.jpg"
+import service4 from "../../assets/servicefbunlock.jpg"
 import Banner1 from "../../assets/banner.png"
+import bgNews1 from "../../assets/news1/bgnew1.jpg"
+import bgNews2 from "../../assets/news2/bgnew2.png"
+import bgNews3 from "../../assets/news3/bganh3.png"
+import bgNews4 from "../../assets/news4/bganh4.png"
+import bgNews5 from "../../assets/news5/bganh5.jpg"
+import bgNews6 from "../../assets/news6/bganh6.jpg"
 import BannerHome1 from "../../assets/bannerhome1.jpg"
 import cust1 from "../../assets/customer/1.png"
 import cust2 from "../../assets/customer/2.png"
@@ -27,40 +37,41 @@ import { useEffect } from "react"
 
 const newsList = [
     {
-        image: News,
-        title: "Content là gì? Cách nhận biết & khác phục vấn đề nội dung mỏng trên website",
+        image: bgNews1,
+        title: "Top 3 Tool Copy chiến dịch quảng cáo Facebook của đối thủ tốt nhất",
         description: "Khám phá Content là gì? TÌm hiểu định nghĩa, vai trò và cách ứng dụng content hiệu quả trong chiến lượt content  marketing. Tìm hiểu ngay",
-        link: '/tin-tuc-new1'
+        link: '/top-3-tool-copy-chien-dich-quang-cao-facebook-cua-doi-thu-tot-nhat'
     },
     {
-        image: News,
-        title: "Content là gì? Cách nhận biết & khác phục vấn đề nội dung mỏng trên website",
-        description: "Khám phá Content là gì? TÌm hiểu định nghĩa, vai trò và cách ứng dụng content hiệu quả trong chiến lượt content  marketing. Tìm hiểu ngay",
-        link: '/tin-tuc-new1'
+        image: bgNews2,
+        title: "Cách nuôi Acc Facebook Ads để chạy quảng cáo",
+        description: "Cách tạo tài khoản cá nhân, tài khoản quảng cáo dễ được trả sau + khả năng sống cao. là bao giờ fix hoàn toàn nhưng nếu ít 1-2 cái thì chắc vẫn còn cửa, hi vọng mọi người tranh thủ làm thêm vài cái mà dự phòng.",
+        link: '/cach-nuoi-acc-facebook-ads-de-chay-quang-cao'
     },
     {
-        image: News,
-        title: "Content là gì? Cách nhận biết & khác phục vấn đề nội dung mỏng trên website",
-        description: "Khám phá Content là gì? TÌm hiểu định nghĩa, vai trò và cách ứng dụng content hiệu quả trong chiến lượt content  marketing. Tìm hiểu ngay",
-        link: '/tin-tuc-new2'
+        image: bgNews3,
+        title: "Tìm hiểu Dark Web từ cơ bản đến nâng cao",
+        description: "Việc truy cập Dark Web cực kỳ dễ dàng và cũng cực kỳ dễ bị phát hiện nếu bạn không có thực hiện các biện pháp phòng bị. Nếu bạn chưa quen với Darknet, bài viết này sẽ giúp bạn đứng vững trên con đường của mình.",
+        link: '/tim-hieu-dark-web-tu-co-ban-den-nang-cao'
     },
     {
-        image: News,
+        image: bgNews4,
         title: "Content là gì? Cách nhận biết & khác phục vấn đề nội dung mỏng trên website",
         description: "Khám phá Content là gì? TÌm hiểu định nghĩa, vai trò và cách ứng dụng content hiệu quả trong chiến lượt content  marketing. Tìm hiểu ngay",
-        link: '/tin-tuc-new2'
+        link: '/top-5-shop-ban-do-gia-dung-cho-mua-he-tren-shopee-gia-re-uy-tin-chat-luong'
     },
     {
-        image: News,
-        title: "Content là gì? Cách nhận biết & khác phục vấn đề nội dung mỏng trên website",
-        description: "Khám phá Content là gì? TÌm hiểu định nghĩa, vai trò và cách ứng dụng content hiệu quả trong chiến lượt content  marketing. Tìm hiểu ngay",
-        link: '/tin-tuc-new2'
+        image: bgNews5,
+        title: "Các cách tấn công của Hacker dùng để chiếm quyền tài khoản của bạn",
+        description: "Đây là tổng hợp một số phương thức chiếm quyền tài khoản mà Hacker thường sử dụng để tấn công bạn. Cùng tìm hiểu để biết cách nhận diện và có cách phòng chống tránh bị mất dữ liệu nhé. Bài viết của bạn Trương Hiếu đăng trên J2Team.",
+        link: '/mot-so-cach-hacker-tan-cong-de-chiem-quyen-tai-khoan'
     },
+
     {
-        image: News,
-        title: "Content là gì? Cách nhận biết & khác phục vấn đề nội dung mỏng trên website",
-        description: "Khám phá Content là gì? TÌm hiểu định nghĩa, vai trò và cách ứng dụng content hiệu quả trong chiến lượt content  marketing. Tìm hiểu ngay",
-        link: '/tin-tuc-new2'
+        image: bgNews6,
+        title: "Hướng dẫn tự lập trình bằng Blackbox AI",
+        description: "Khám phá Blackbox AI – Trợ thủ đắc lực cho lập trình viên với tính năng Code Chat, tích hợp Github và chuyển hình ảnh thành code dễ dàng! Thanh Kim by Thanh Kimin Phần mềm máy tính Blackbox AI đang trở thành một cái tên nổi bật trong cộng đồng lập trình viên nhờ khả năng hỗ trợ vượt trội trong việc tối ưu hóa quy trình viết mã. Đây không chỉ là một công cụ thông thường, mà còn là một trợ lý ảo thông minh, sẵn sàng đồng hành cùng bạn trong mọi dự án coding. Hãy cùng khám phá xem điều gì khiến công cụ này thu hút đến vậy!",
+        link: '/huong-dan-tu-lap-trinh-bang-blackbox-ai'
     },
 
 ];
@@ -140,36 +151,10 @@ const Home = () => {
                         <h1>DỊCH VỤ CỦA CHÚNG TÔI</h1>
                         <div className="row">
                             <div className="col-lg-3 mt-4">
-                                <Link to='/website'>
-                                    <div className={styles.boxService}>
-                                        <div className={styles.hoverImage}>
-                                            <img src={Service} style={{ width: '100%' }} alt="" />
-                                            <div className={styles.backgroundText}>
-                                                <p>THIẾT KẾ WEBSITE</p>
-                                            </div>
-                                        </div>
-                                        <span>THIẾT KẾ WEBSITE</span>
-                                    </div>
-                                </Link>
-                            </div>
-                            <div className="col-lg-3 mt-4" >
                                 <Link to='/quang-cao-facebook'>
                                     <div className={styles.boxService}>
                                         <div className={styles.hoverImage}>
-                                            <img src={Service} style={{ width: '100%' }} alt="" />
-                                            <div className={styles.backgroundText}>
-                                                <p>THIẾT KẾ LANDING PAGE</p>
-                                            </div>
-                                        </div>
-                                        <span>THIẾT KẾ LANDING PAGE</span>
-                                    </div>
-                                </Link>
-                            </div>
-                            <div className="col-lg-3 mt-4">
-                                <Link to='/landing-page'>
-                                    <div className={styles.boxService}>
-                                        <div className={styles.hoverImage}>
-                                            <img src={Service} style={{ width: '100%' }} alt="" />
+                                            <img src={service3} style={{ width: '100%' }} alt="" />
                                             <div className={styles.backgroundText}>
                                                 <p>CHẠY QUẢNG CÁO FACEBOOK</p>
                                             </div>
@@ -179,10 +164,10 @@ const Home = () => {
                                 </Link>
                             </div>
                             <div className="col-lg-3 mt-4">
-                                <Link>
+                                <Link to='/ho-tro-facebook'>
                                     <div className={styles.boxService}>
                                         <div className={styles.hoverImage}>
-                                            <img src={Service} style={{ width: '100%' }} alt="" />
+                                            <img src={service4} style={{ width: '100%' }} alt="" />
                                             <div className={styles.backgroundText}>
                                                 <p>HỖ TRỢ FACEBOOK</p>
                                             </div>
@@ -191,6 +176,33 @@ const Home = () => {
                                     </div>
                                 </Link>
                             </div>
+                            <div className="col-lg-3 mt-4">
+                                <Link to='/website'>
+                                    <div className={styles.boxService}>
+                                        <div className={styles.hoverImage}>
+                                            <img src={service1} style={{ width: '100%' }} alt="" />
+                                            <div className={styles.backgroundText}>
+                                                <p>THIẾT KẾ WEBSITE</p>
+                                            </div>
+                                        </div>
+                                        <span>THIẾT KẾ WEBSITE</span>
+                                    </div>
+                                </Link>
+                            </div>
+                            <div className="col-lg-3 mt-4" >
+                                <Link to='/landing-page'>
+                                    <div className={styles.boxService}>
+                                        <div className={styles.hoverImage}>
+                                            <img src={service2} style={{ width: '100%' }} alt="" />
+                                            <div className={styles.backgroundText}>
+                                                <p>THIẾT KẾ LANDING PAGE</p>
+                                            </div>
+                                        </div>
+                                        <span>THIẾT KẾ LANDING PAGE</span>
+                                    </div>
+                                </Link>
+                            </div>
+
                         </div>
                     </div>
                 </section>
@@ -433,8 +445,8 @@ const Home = () => {
                                         <div className={styles.boxnews}>
                                             <img src={news.image} alt="" />
                                             <div className={styles.contentNews}>
-                                                <Link to={news.link}>{news.title}</Link>
-                                                <p>{news.description}</p>
+                                                <Link to={news.link}>{news.title.length > 80 ? news.title.slice(0, 80) + '...' : news.title}</Link>
+                                                <p>{news.description.length > 130 ? news.description.slice(0, 130) + '...' : news.description}</p>
                                                 <div className={styles.line}></div>
                                             </div>
                                         </div>
