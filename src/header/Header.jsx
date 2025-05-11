@@ -1,4 +1,4 @@
-import Logo from "../assets/logo.png"
+import Logo from "../assets/04media.svg"
 import Service from "../assets/service.jpg"
 import { FaUserPlus, FaUsers, FaBuffer, FaLaptop, FaBars, FaTimes } from "react-icons/fa";
 

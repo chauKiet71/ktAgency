@@ -9,37 +9,37 @@ import Flash from "../../assets/flash.png"
 
 const Contact = () => {
 
-    const [formData, setFormData] = useState({
-        name: "",
-        email: "",
-        phone: "",
-        service: "",
-        message: ""
-    });
+    // const [formData, setFormData] = useState({
+    //     name: "",
+    //     email: "",
+    //     phone: "",
+    //     service: "",
+    //     message: ""
+    // });
 
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData((prev) => ({ ...prev, [name]: value }));
-    };
+    // const handleChange = (e) => {
+    //     const { name, value } = e.target;
+    //     setFormData((prev) => ({ ...prev, [name]: value }));
+    // };
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
+    // const handleSubmit = async (e) => {
+    //     e.preventDefault();
 
-        const response = await fetch("https://script.google.com/macros/s/AKfycbxbjlTqjLb8vHMD4Fxtrn8ejk3TQQAoV7UL3bglQ1ISVaOmuZVslgwOhjTb3XUKcZCo/exec", {
-            method: "POST",
-            body: JSON.stringify(formData),
-            headers: {
-                "Content-Type": "application/json"
-            }
-        });
+    //     const response = await fetch("https://script.google.com/macros/s/AKfycbxbjlTqjLb8vHMD4Fxtrn8ejk3TQQAoV7UL3bglQ1ISVaOmuZVslgwOhjTb3XUKcZCo/exec", {
+    //         method: "POST",
+    //         body: JSON.stringify(formData),
+    //         headers: {
+    //             "Content-Type": "application/json"
+    //         }
+    //     });
 
-        const result = await response.json();
-        if (result.result === "success") {
-            alert("Gửi thành công!");
-        } else {
-            alert("Lỗi khi gửi. Vui lòng thử lại.");
-        }
-    };
+    //     const result = await response.json();
+    //     if (result.result === "success") {
+    //         alert("Gửi thành công!");
+    //     } else {
+    //         alert("Lỗi khi gửi. Vui lòng thử lại.");
+    //     }
+    // };
 
     return (
         <>
@@ -48,20 +48,20 @@ const Contact = () => {
                 <h1 className={styles.title}>THÔNG TIN LIÊN HỆ</h1>
                 <div className="row">
                     <div className="col-lg-6 mt-3">
-                        <form className={styles.contactForm} onSubmit={handleSubmit}>
+                        <form action="https://formspree.io/f/xyzwdeya" method="POST" className={styles.contactForm} >
 
 
-                            <input type="text" placeholder="Họ tên" />
-                            <input type="email" placeholder="Email" />
-                            <input type="text" placeholder="Số điện thoại" />
-                            <select defaultValue="choose">
+                            <input type="text" name="fullName" placeholder="Họ tên" />
+                            <input type="email" name="email" placeholder="Email" />
+                            <input type="text" name="phone" placeholder="Số điện thoại" />
+                            <select name="service" defaultValue="choose">
                                 <option value="choose">Chọn dịch vụ</option>
                                 <option value="web">Thiết kế website</option>
                                 <option value="seo">Dịch vụ SEO</option>
                                 <option value="ads">Quảng cáo Google/Facebook</option>
                             </select>
+                            <textarea name="message" placeholder="Nội dung tin nhắn"></textarea>
 
-                            <textarea placeholder="Nội dung tin nhắn" ></textarea>
 
                             <div className={styles.btnSend}>
                                 <button type="submit"> <img src={Flash} alt="" /> Yêu cầu tư vấn <span>miễn phí</span></button>
